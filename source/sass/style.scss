@@ -8,14 +8,16 @@
 // Global
 // ---------------------------------
 
-@import "variables";
-@import "mixins";
+@import "../sass/variables.scss";
+@import "../sass/mixins.scss";
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
 @import "../sass/blocks/header.scss";
 @import "../sass/blocks/logo.scss";
+@import "../sass/blocks/nav.scss";
+@import "../sass/blocks/intro.scss";
 
 // Blocks
 // ---------------------------------

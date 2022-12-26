@@ -7,31 +7,32 @@
     #b80027 313.31deg,
     #003d85 392.24deg
   );
+
+  @include vp-1023 {
+    background: conic-gradient(
+      from 139.4deg at 20.7% 35.74%,
+      #b80027 -46.69deg,
+      #003d85 32.24deg,
+      #b80027 313.31deg,
+      #003d85 392.24deg
+    );
+  }
 }
 
 .header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header__link-tel {
-  @include font(26px, 31px, 600);
-
-  letter-spacing: 0.03em;
-  color: $second-color;
+  padding-top: 30px;
 
   @include vp-1023 {
-    @media (max-width: (vp-1024 - 1px)) {
-      @include font(24px, 29px, 700);
-
-      letter-spacing: 0.02em;
-    }
+    padding-top: 34px;
   }
 
   @include vp-767 {
-    @media (max-width: (vp-768 - 1px)) {
-      @include font(20px, 24px, 600);
-    }
+    padding-top: 15px;
+  }
+}
+
+.header__nav {
+  @include vp-1023 {
+    margin-bottom: 19px;
   }
 }
