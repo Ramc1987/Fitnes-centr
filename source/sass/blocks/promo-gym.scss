@@ -1,0 +1,53 @@
+.promo-gym__container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @include vp-1023 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.promo-gym__description {
+  display: grid;
+  grid-template-columns: 415px auto;
+  gap: 85px;
+}
+
+.promo-gym__content {
+  padding-left: 60px;
+}
+
+.promo-gym__content h2 {
+  @include font(48px, 58px, 600);
+  letter-spacing: 0.03em;
+
+  margin: 0;
+  margin-bottom: 6px;
+  padding-top: 39px;
+}
+
+.promo-gym__content span {
+  @include font(18px, 150%, 400);
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 39px;
+}
+
+.promo-gym__content p {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+
+  @include font(16px, 150%, 300);
+  margin: 0;
+  margin-bottom: 9px;
+}
+
+.promo-gym__content p + p {
+  margin: 0;
+
+  @include vp-1023 {
+    display: none;
+  }
+}
