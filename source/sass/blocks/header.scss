@@ -16,6 +16,13 @@
       #b80027 313.31deg,
       #003d85 392.24deg
     );
+
+    min-height: 554px;
+    padding-bottom: 34px;
+  }
+
+  @include vp-767 {
+    min-height: 491px;
   }
 }
 
