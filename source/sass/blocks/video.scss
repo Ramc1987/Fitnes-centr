@@ -4,6 +4,19 @@
   height: 228px;
   left: 37.7%;
   margin-top: -113px;
+
+  @include vp-1023 {
+    width: 39.2%;
+    height: 21.5vw;
+    left: 0;
+    margin: -84px auto 0;
+  }
+
+  @include vp-767 {
+    margin: 0 auto;
+    width: 100%;
+    height: 52.2vw;
+  }
 }
 
 .video--enabled {
@@ -51,6 +64,14 @@
   width: 100%;
   height: 228px;
   border: none;
+
+  @include vp-1023 {
+    height: 21.5vw;
+  }
+
+  @include vp-767 {
+    height: 52.2vw;
+  }
 }
 
 .video__button {
@@ -67,6 +88,11 @@
   background-color: transparent;
   border-radius: 50%;
   cursor: pointer;
+
+  @include vp-1023 {
+    width: 73px;
+    height: 73px;
+  }
 
   &:focus-visible {
     outline-offset: 2px;

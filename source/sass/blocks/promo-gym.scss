@@ -6,16 +6,39 @@
     padding-top: 100px;
     padding-bottom: 100px;
   }
+
+  @include vp-767 {
+    padding: 64px 0;
+  }
 }
 
 .promo-gym__description {
   display: grid;
   grid-template-columns: 415px auto;
   gap: 85px;
+
+  @include vp-1023 {
+    display: block;
+  }
+
+  @include vp-767 {
+    margin-bottom: 40px;
+  }
 }
 
 .promo-gym__content {
   padding-left: 60px;
+  z-index: 2;
+
+  @include vp-1023 {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    text-align: inherit;
+    padding: 0 15px;
+  }
 }
 
 .promo-gym__content h2 {
@@ -25,6 +48,19 @@
   margin: 0;
   margin-bottom: 6px;
   padding-top: 39px;
+
+  @include vp-1023 {
+    @include font(42px, 49px, 600);
+
+    padding: 2px 15px 0 0;
+    margin: 0;
+  }
+
+  @include vp-767 {
+    @include font(32px, 38px, 600);
+    margin-bottom: 5px;
+    padding: 0;
+  }
 }
 
 .promo-gym__content span {
@@ -34,6 +70,14 @@
   display: inline-block;
   vertical-align: middle;
   margin-bottom: 39px;
+
+  @include vp-1023 {
+    margin-bottom: 33px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 24px;
+  }
 }
 
 .promo-gym__content p {
@@ -42,6 +86,17 @@
   @include font(16px, 150%, 300);
   margin: 0;
   margin-bottom: 9px;
+
+  @include vp-1023 {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 44px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 32px 0;
+    width: 93%;
+  }
 }
 
 .promo-gym__content p + p {
@@ -49,5 +104,18 @@
 
   @include vp-1023 {
     display: none;
+  }
+}
+
+.promo-gym__image img {
+  @include vp-1023 {
+    width: 100%;
+    height: 44.9vw;
+  }
+
+  @include vp-767 {
+    height: 97.9vw;
+    object-fit: cover;
+    object-position: -135px 0;
   }
 }
