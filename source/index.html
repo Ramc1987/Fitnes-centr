@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание проекта">
     <title>ProjectName</title>
     <link rel="stylesheet" href="css/style.min.css">
@@ -37,7 +37,10 @@
                 <a class="intro__button button" href="#subscription">Купить абонемент</a>
               </div>
               <div class="intro__img">
-                <img src="img/content-images/trener@1x.jpg" srcset="img/content-images/trener@2x 2x" width="500" height="556" alt="Мужчина-тренер в нашем спорт-зале">
+                <picture>
+                  <source type="image/webp" srcset="img/content-images/trener@1x.webp 1x, img/content-images/trener@2x.webp 2x">
+                  <img src="img/content-images/trener@1x.jpg" srcset="img/content-images/trener@2x 2x" width="500" height="556" alt="Мужчина-тренер в нашем спорт-зале">
+                </picture>
               </div>
             </div>
           </div>

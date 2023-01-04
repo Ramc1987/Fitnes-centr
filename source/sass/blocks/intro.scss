@@ -147,6 +147,9 @@
 
 .intro__img img {
   margin-top: -23px;
+  height: 40.7vw;
+  object-fit: cover;
+  object-position: -1px -59px;
 
   @include vp-1023 {
     margin-top: 0;

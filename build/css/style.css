@@ -782,6 +782,11 @@ button,
 
 .intro__img img {
   margin-top: -23px;
+  height: 40.7vw;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: -1px -59px;
+  object-position: -1px -59px;
 }
 
 .promo-gym__container {
@@ -833,6 +838,11 @@ button,
 
 .promo-gym__content p + p {
   margin: 0;
+}
+
+.promo-gym__image img {
+  width: 100%;
+  height: 29.3vw;
 }
 
 .video {
@@ -1075,7 +1085,6 @@ button,
   }
 
   .promo-gym__image img {
-    width: 100%;
     height: 44.9vw;
   }
 

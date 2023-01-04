@@ -108,8 +108,10 @@
 }
 
 .promo-gym__image img {
+  width: 100%;
+  height: 29.3vw;
+
   @include vp-1023 {
-    width: 100%;
     height: 44.9vw;
   }
 
