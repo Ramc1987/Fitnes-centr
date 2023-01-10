@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -21,6 +21,10 @@
 @import "../sass/blocks/promo-gym.scss";
 @import "../sass/blocks/video.scss";
 @import "../sass/blocks/tabs.scss";
+@import "../sass/blocks/games.scss";
+@import "../sass/blocks/trainer.scss";
+@import "../sass/blocks/swiper-card.scss";
+@import "../sass/blocks/card-trainer.scss";
 
 // Blocks
 // ---------------------------------

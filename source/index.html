@@ -80,9 +80,9 @@
           <div class="tabs__container container">
             <h2>Абонементы</h2>
             <div class="tabs__list-button reset-list">
-              <button class="tabs__button tabs__button--active" type="button">1 месяц</button>
-              <button class="tabs__button" type="button">6 месяц</button>
-              <button class="tabs__button" type="button">12 месяц</button>
+              <button class="tabs__button tabs__button--active" type="button" data-target="#one-month">1 месяц</button>
+              <button class="tabs__button" type="button" data-target="#six-month">6 месяцев</button>
+              <button class="tabs__button" type="button" data-target="#twelve-month">12 месяцев</button>
             </div>
             <div class="tabs__info-list">
               <ul class="tab__list tab__list--active reset-list" id="one-month">
@@ -124,7 +124,7 @@
                   <div class="tab__item-wrapper">
                     <h3>Дневной</h3>
                     <span>с&nbsp;8:00 до&nbsp;17:00</span>
-                    <b data-parent="1700">1700</b>
+                    <b data-parent="2700">2700</b>
                     <a class="tab__link-button" href="#">купить абонемент</a>
                   </div>
                 </li>
@@ -132,7 +132,7 @@
                   <div class="tab__item-wrapper">
                     <h3>Полный день</h3>
                     <span>с&nbsp;8:00 до&nbsp;22:00</span>
-                    <b data-parent="2700">2700</b>
+                    <b data-parent="4700">4700</b>
                     <a class="tab__link-button" href="#">купить абонемент</a>
                   </div>
                 </li>
@@ -150,7 +150,7 @@
                   <div class="tab__item-wrapper">
                     <h3>Дневной</h3>
                     <span>с&nbsp;8:00 до&nbsp;17:00</span>
-                    <b data-parent="1700">1700</b>
+                    <b data-parent="1300">1300</b>
                     <a class="tab__link-button" href="#">купить абонемент</a>
                   </div>
                 </li>
@@ -158,12 +158,231 @@
                   <div class="tab__item-wrapper">
                     <h3>Полный день</h3>
                     <span>с&nbsp;8:00 до&nbsp;22:00</span>
-                    <b data-parent="2700">2700</b>
+                    <b data-parent="6500">6500</b>
                     <a class="tab__link-button" href="#">купить абонемент</a>
                   </div>
                 </li>
               </ul>
             </div>
+          </div>
+        </section>
+        <section class="games">
+          <div class="games__container container">
+            <div class="games__inner">
+              <div class="games__content">
+                <h2>SUPER GAMES</h2>
+                  <div class="games__date-content">
+                    <div class="games__date">
+                      <h3>Дата</h3>
+                      <p>
+                        <span>7</span>
+                        <span>Марта 2019</span>
+                      </p>
+                    </div>
+                    <div class="games__date games__time">
+                      <h3>Время</h3>
+                      <p>12:00</p>
+                    </div>
+                  </div>
+              </div>
+              <p>Ежегодные соревнования по CrossFit</p>
+              <a class="games__link" href="#">заполнить заявку</a>
+            </div>
+            <div class="games__images">
+              <picture>
+                <source>
+                <img src="img/content-images/player.jpg"  srcset="img/content-images/player@2x.jpg 2x" width="660" height="500" alt="Игрок">
+              </picture>
+            </div>
+          </div>
+        </section>
+        <section class="trainer">
+          <div class="trainer__container container">
+            <h2>Тренеры</h2>
+          </div>
+          <div class="trainer__swiper">
+            <div class="trainer__swaper-slides swiper" id="swiperTrainer">
+              <ul class="swaper__list swiper-wrapper reset-list">
+                <li class="swiper__card card-trainer swiper-slide" tabindex="0">
+                  <div class="card-trainer__front">
+                    <h3>Анна Павлова</h3>
+                    <div class="card-trainer__images">
+                      <picture>
+                        <source type="image/webp" srcset="img/content-images/slide-1@1x.webp 1x, img/content-images/slide-1@2x.webp 2x">
+                        <img src="img/content-images/slide-1@1x.jpg" srcset="img/content-images/slide-1@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Тренер Анна Павловна.">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="card-trainer__content">
+                    <h3>Анна Павлова</h3>
+                    <span>CrossFit</span>
+                    <ul class="card-trainer__list-description reset-list">
+                      <li class="card-trainer__item-description">Certified Level 3 Trainer</li>
+                      <li class="card-trainer__item-description">Победитель чемпионата России по CrossFit</li>
+                      <li class="card-trainer__item-description">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+
+                </li>
+                <li class="swiper__card card-trainer swiper-slide">
+                  <div class="card-trainer__front">
+                    <h3>Анна Павлова</h3>
+                    <div class="card-trainer__images">
+                      <picture>
+                        <source type="image/webp" srcset="img/content-images/slide-2@1x.webp 1x, img/content-images/slide-2@2x.webp 2x">
+                        <img src="img/content-images/slide-2@1x.jpg" srcset="img/content-images/slide-2@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Тренер Анна Павловна.">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="card-trainer__content">
+                    <h3>Анна Павлова</h3>
+                    <span>CrossFit</span>
+                    <ul class="card-trainer__list-description reset-list">
+                      <li class="card-trainer__item-description">Certified Level 3 Trainer</li>
+                      <li class="card-trainer__item-description">Победитель чемпионата России по CrossFit</li>
+                      <li class="card-trainer__item-description">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+
+                </li>
+                <li class="swiper__card card-trainer swiper-slide">
+                  <div class="card-trainer__front">
+                    <h3>Анна Павлова</h3>
+                    <div class="card-trainer__images">
+                      <picture>
+                        <source type="image/webp" srcset="img/content-images/slide-3@1x.webp 1x, img/content-images/slide-3@2x.webp 2x">
+                        <img src="img/content-images/slide-3@1x.jpg" srcset="img/content-images/slide-3@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Тренер Анна Павловна.">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="card-trainer__content">
+                    <h3>Анна Павлова</h3>
+                    <span>CrossFit</span>
+                    <ul class="card-trainer__list-description reset-list">
+                      <li class="card-trainer__item-description">Certified Level 3 Trainer</li>
+                      <li class="card-trainer__item-description">Победитель чемпионата России по CrossFit</li>
+                      <li class="card-trainer__item-description">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+
+                </li>
+                <li class="swiper__card card-trainer swiper-slide">
+                  <div class="card-trainer__front">
+                    <h3>Анна Павлова</h3>
+                    <div class="card-trainer__images">
+                      <picture>
+                        <source type="image/webp" srcset="img/content-images/slide-4@1x.webp 1x, img/content-images/slide-4@2x.webp 2x">
+                        <img src="img/content-images/slide-4@1x.jpg" srcset="img/content-images/slide-4@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Тренер Анна Павловна.">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="card-trainer__content">
+                    <h3>Анна Павлова</h3>
+                    <span>CrossFit</span>
+                    <ul class="card-trainer__list-description reset-list">
+                      <li class="card-trainer__item-description">Certified Level 3 Trainer</li>
+                      <li class="card-trainer__item-description">Победитель чемпионата России по CrossFit</li>
+                      <li class="card-trainer__item-description">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+
+                </li>
+                <li class="swiper__card card-trainer swiper-slide">
+                  <div class="card-trainer__front">
+                    <h3>Анна Павлова</h3>
+                    <div class="card-trainer__images">
+                      <picture>
+                        <source type="image/webp" srcset="img/content-images/slide-1@1x.webp 1x, img/content-images/slide-1@2x.webp 2x">
+                        <img src="img/content-images/slide-1@1x.jpg" srcset="img/content-images/slide-1@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Тренер Анна Павловна.">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="card-trainer__content">
+                    <h3>Анна Павлова</h3>
+                    <span>CrossFit</span>
+                    <ul class="card-trainer__list-description reset-list">
+                      <li class="card-trainer__item-description">Certified Level 3 Trainer</li>
+                      <li class="card-trainer__item-description">Победитель чемпионата России по CrossFit</li>
+                      <li class="card-trainer__item-description">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+
+                </li>
+                <li class="swiper__card card-trainer swiper-slide">
+                  <div class="card-trainer__front">
+                    <h3>Анна Павлова</h3>
+                    <div class="card-trainer__images">
+                      <picture>
+                        <source type="image/webp" srcset="img/content-images/slide-2@1x.webp 1x, img/content-images/slide-2@2x.webp 2x">
+                        <img src="img/content-images/slide-2@1x.jpg" srcset="img/content-images/slide-2@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Тренер Анна Павловна.">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="card-trainer__content">
+                    <h3>Анна Павлова</h3>
+                    <span>CrossFit</span>
+                    <ul class="card-trainer__list-description reset-list">
+                      <li class="card-trainer__item-description">Certified Level 3 Trainer</li>
+                      <li class="card-trainer__item-description">Победитель чемпионата России по CrossFit</li>
+                      <li class="card-trainer__item-description">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+
+                </li>
+                <li class="swiper__card card-trainer swiper-slide">
+                  <div class="card-trainer__front">
+                    <h3>Анна Павлова</h3>
+                    <div class="card-trainer__images">
+                      <picture>
+                        <source type="image/webp" srcset="img/content-images/slide-3@1x.webp 1x, img/content-images/slide-3@2x.webp 2x">
+                        <img src="img/content-images/slide-3@1x.jpg" srcset="img/content-images/slide-3@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Тренер Анна Павловна.">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="card-trainer__content">
+                    <h3>Анна Павлова</h3>
+                    <span>CrossFit</span>
+                    <ul class="card-trainer__list-description reset-list">
+                      <li class="card-trainer__item-description">Certified Level 3 Trainer</li>
+                      <li class="card-trainer__item-description">Победитель чемпионата России по CrossFit</li>
+                      <li class="card-trainer__item-description">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+
+                </li>
+                <li class="swiper__card card-trainer swiper-slide">
+                  <div class="card-trainer__front">
+                    <h3>Анна Павлова</h3>
+                    <div class="card-trainer__images">
+                      <picture>
+                        <source type="image/webp" srcset="img/content-images/slide-4@1x.webp 1x, img/content-images/slide-4@2x.webp 2x">
+                        <img src="img/content-images/slide-4@1x.jpg" srcset="img/content-images/slide-4@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Тренер Анна Павловна.">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="card-trainer__conent">
+                    <h3>Анна Павлова</h3>
+                    <span>CrossFit</span>
+                    <ul class="card-trainer__list-description reset-list">
+                      <li class="card-trainer__item-description">Certified Level 3 Trainer</li>
+                      <li class="card-trainer__item-description">Победитель чемпионата России по CrossFit</li>
+                      <li class="card-trainer__item-description">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+
+                </li>
+              </ul>
+            </div>
+            <button class="trainer__swiper-button trainer__swiper-button--prev swiper-button-prev" type="button">
+              <svg role="img" aria-label="кнопка назад." width="16" height="32">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+            <button class="trainer__swiper-button trainer__swiper-button--next swiper-button-next" type="button">
+              <svg role="img" aria-label="кнопка вперед." width="16" height="32">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
           </div>
         </section>
       </main>

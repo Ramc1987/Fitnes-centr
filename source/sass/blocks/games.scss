@@ -1,0 +1,168 @@
+.games__container {
+  padding-top: 120px;
+  padding-bottom: 106px;
+  display: flex;
+
+  @include vp-767 {
+    display: grid;
+    padding-top: 74px;
+  }
+}
+
+.games__inner {
+  background-color: #ed0233;
+  padding: 85px 78px 57px 78px;
+
+  @include vp-1023 {
+    padding: 59px 45px;
+  }
+
+  @include vp-767 {
+    padding: 51px 45px 41px 44px;
+  }
+}
+
+.games__date-content {
+  @include vp-767 {
+    margin-top: -4px;
+  }
+}
+
+.games__content {
+  display: flex;
+  margin-bottom: 33px;
+
+  @include vp-767 {
+    margin-bottom: 2px;
+  }
+}
+
+.games__content h2 {
+  @include font(82px, 96%, 600);
+  letter-spacing: 0.03em;
+  color: #ffffff;
+
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  width: 201px;
+
+  @include vp-1023 {
+    @include font(48px, 96%, 600);
+
+    margin-right: 29px;
+    width: 100%;
+  }
+
+  @include vp-767 {
+    padding-left: 7px;
+  }
+}
+
+.games__date {
+  width: 64px;
+
+  @include vp-1023 {
+    width: 42px;
+  }
+}
+
+.games__time {
+  width: 90px;
+
+  @include vp-1023 {
+    width: 56px;
+  }
+}
+
+.games__date h3,
+p {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: $second-color;
+  margin: 0;
+}
+
+.games__date h3 {
+  @include font(18px, 150%, 400);
+  border-bottom: 1px solid $second-color;
+
+  @include vp-1023 {
+    @include font(12px, 150%, 400);
+  }
+}
+
+.games__date p {
+  @include font(40px, 150%, 700);
+  display: inline-flex;
+  align-items: center;
+
+  @include vp-1023 {
+    @include font(24px, 150%, 700);
+  }
+
+  @include vp-767 {
+    @include font(24px, 150%, 700);
+    margin-bottom: -6px;
+  }
+}
+
+.games__date span {
+  @include vp-767 {
+    margin-right: 5px;
+  }
+}
+
+.games__date span + span {
+  @include font(14px, 150%, 400);
+  color: $second-color;
+  display: inline-block;
+  vertical-align: middle;
+
+  @include vp-1023 {
+    @include font(10px, 150%, 400);
+  }
+}
+
+.games__inner > p {
+  @include font(18px, 150%, 400);
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  margin-bottom: 55px;
+
+  @include vp-1023 {
+    @include font(12px, 150%, 400);
+
+    margin-bottom: 32px;
+  }
+}
+
+.games__link {
+  @include font(12px, 14px, 700);
+  color: $second-color;
+  letter-spacing: 0.05em;
+
+  outline: 4px solid $second-color;
+  display: block;
+  text-transform: uppercase;
+  padding: 29px 0;
+
+  @include vp-1023 {
+    @include font(10px, 12px, 700);
+    padding: 16px 0;
+    outline: 2px solid $second-color;
+  }
+
+  @include vp-767 {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
+
+.games__images {
+  width: 100%;
+}
+
+.games__images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

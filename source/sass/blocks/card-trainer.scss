@@ -1,0 +1,90 @@
+.card-trainer {
+  position: relative;
+  width: 22.44%;
+  max-height: 294px;
+  height: 24vw;
+  margin-right: 40px;
+  overflow: hidden;
+}
+
+.card-trainer:hover .card-trainer__content {
+  z-index: 1;
+  background-color: rgba(16, 38, 84, 0.89);
+}
+
+.card-trainer__front {
+  position: relative;
+}
+
+.card-trainer__front h3 {
+  @include font(18px, 150%, 700);
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: $second-color;
+
+  margin: 0;
+  position: absolute;
+  bottom: 30px;
+  left: 35px;
+}
+
+.card-trainer__images img {
+  object-fit: cover;
+  width: 100%;
+  height: 22vw;
+  max-height: 294px;
+}
+
+.card-trainer__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  padding: 58px 37px;
+  overflow: auto;
+}
+
+.card-trainer__content h3,
+span,
+.card-trainer__item-description {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: $second-color;
+}
+
+.card-trainer__content h3 {
+  @include font(18px, 150%, 700);
+
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.card-trainer__content span {
+  @include font(16px, 150%, 400);
+  color: #b6bdcc;
+
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 45px;
+}
+
+.card-trainer__item-description {
+  @include font(14px, 150%, 400);
+  padding-left: 16px;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $second-color;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+}

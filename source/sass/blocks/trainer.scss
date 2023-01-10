@@ -1,0 +1,59 @@
+.trainer__swiper {
+  position: relative;
+  width: 93.11%;
+  max-width: 1272px;
+  margin: 0 auto;
+  padding-top: 58px;
+  padding-bottom: 96px;
+}
+
+.trainer__swaper-slides {
+  width: 92%;
+}
+
+.trainer__container h2 {
+  @include font(54px, 65px, 600);
+  letter-spacing: 0.03em;
+
+  margin: 0;
+}
+
+.trainer__swiper-button {
+  border: none;
+  background-color: transparent;
+  width: 16px;
+  height: 32px;
+  padding: 0;
+  z-index: 3;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    display: none;
+  }
+
+  &--prev {
+    left: 0;
+    top: 52%;
+    transform: rotate(180deg);
+  }
+
+  &--next {
+    right: 0;
+    top: 52%;
+    transform: rotate(360deg);
+  }
+
+  &:focus-visible {
+    outline-offset: 2px;
+    outline: 1px solid $primary-color;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
