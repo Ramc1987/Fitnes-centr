@@ -168,30 +168,27 @@
         </section>
         <section class="games">
           <div class="games__container container">
-            <div class="games__inner">
-              <div class="games__content">
-                <h2>SUPER GAMES</h2>
-                  <div class="games__date-content">
-                    <div class="games__date">
-                      <h3>Дата</h3>
-                      <p>
-                        <span>7</span>
-                        <span>Марта 2019</span>
-                      </p>
-                    </div>
-                    <div class="games__date games__time">
-                      <h3>Время</h3>
-                      <p>12:00</p>
-                    </div>
-                  </div>
+            <div class="games__content">
+              <div class="games__info">
+                <h2>super games</h2>
+                <ul class="games__date-list reset-list">
+                  <li class="games__date-item">
+                    <span class="games__title">Дата</span>
+                    <time datetime="2019-03-07">7<span>Марта 2019</span></time>
+                  </li>
+                  <li class="games__date-item">
+                    <span class="games__title">Время</span>
+                    <time datetime="2019-03-07T12:00">12:00</time>
+                  </li>
+                </ul>
               </div>
               <p>Ежегодные соревнования по CrossFit</p>
-              <a class="games__link" href="#">заполнить заявку</a>
+              <a href="#">заполнить заявку</a>
             </div>
             <div class="games__images">
               <picture>
-                <source>
-                <img src="img/content-images/player.jpg"  srcset="img/content-images/player@2x.jpg 2x" width="660" height="500" alt="Игрок">
+                <source type="image/webp" srcset="img/content-images/player.webp 1x, img/content-images/player@2x.webp 2x">
+                <img src="img/content-images/player.jpg" srcset="img/content-images/player@2x.jpg 2x" width="660" height="500" alt="Игрок">
               </picture>
             </div>
           </div>
