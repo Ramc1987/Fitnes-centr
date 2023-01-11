@@ -1,14 +1,26 @@
+.trainer__container {
+  padding-top: 107px;
+}
+
 .trainer__swiper {
   position: relative;
-  width: 93.11%;
+  width: 92.11%;
   max-width: 1272px;
   margin: 0 auto;
-  padding-top: 58px;
+  padding-top: 48px;
   padding-bottom: 96px;
+
+  @include vp-1023 {
+    width: 88.29%;
+  }
 }
 
 .trainer__swaper-slides {
   width: 92%;
+
+  @include vp-1023 {
+    width: 83.77%;
+  }
 }
 
 .trainer__container h2 {
@@ -33,15 +45,23 @@
   }
 
   &--prev {
-    left: 0;
-    top: 52%;
+    left: -8px;
+    top: 45.5%;
     transform: rotate(180deg);
+
+    @include vp-1023 {
+      left: 0;
+    }
   }
 
   &--next {
-    right: 0;
-    top: 52%;
+    right: -8px;
+    top: 46%;
     transform: rotate(360deg);
+
+    @include vp-1023 {
+      right: 0;
+    }
   }
 
   &:focus-visible {

@@ -1,13 +1,17 @@
 .card-trainer {
   position: relative;
   width: 22.44%;
-  max-height: 294px;
+  min-height: 294px;
   height: 24vw;
   margin-right: 40px;
   overflow: hidden;
+
+  @include vp-1023 {
+    height: 39vw;
+  }
 }
 
-.card-trainer:hover .card-trainer__content {
+.card-trainer:hover .card-trainer__content-wrapper {
   z-index: 1;
   background-color: rgba(16, 38, 84, 0.89);
 }
@@ -23,28 +27,38 @@
 
   margin: 0;
   position: absolute;
-  bottom: 30px;
-  left: 35px;
+  bottom: 22px;
+  left: 77px;
 }
 
 .card-trainer__images img {
   object-fit: cover;
   width: 100%;
   height: 22vw;
-  max-height: 294px;
+  min-height: 294px;
+
+  @include vp-1023 {
+    height: 39vw;
+    min-height: 294px;
+  }
 }
 
-.card-trainer__content {
+.card-trainer__content-wrapper {
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
-  padding: 58px 37px;
   overflow: auto;
+
+  @include vp-1023 {
+    padding: 56px 12px 0 12px;
+  }
 }
 
 .card-trainer__content h3,
-span,
+.card-trainer__content span,
 .card-trainer__item-description {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: $second-color;
@@ -52,18 +66,32 @@ span,
 
 .card-trainer__content h3 {
   @include font(18px, 150%, 700);
+  width: 146px;
 
-  margin: 0;
-  margin-bottom: 10px;
+  margin: 0 auto;
+  margin-bottom: -5px;
+
+  @include vp-1023 {
+    @include font(18px, 109%, 700);
+    margin-bottom: 0;
+    text-align: center;
+  }
 }
 
 .card-trainer__content span {
   @include font(16px, 150%, 400);
   color: #b6bdcc;
+  width: 102px;
 
-  display: inline-block;
-  vertical-align: middle;
-  margin-bottom: 45px;
+  display: block;
+  margin: 0 auto 33px;
+  text-align: center;
+}
+
+.card-trainer__list-description {
+  @include vp-1023 {
+    padding: 0 12px 0 47px;
+  }
 }
 
 .card-trainer__item-description {
@@ -75,7 +103,7 @@ span,
   &::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 10px;
     left: 0;
     transform: translateY(-50%);
     width: 6px;
@@ -87,4 +115,13 @@ span,
       margin-bottom: 24px;
     }
   }
+
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}
+
+.card-trainer__images-matrix {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  object-position: 0 0;
 }
