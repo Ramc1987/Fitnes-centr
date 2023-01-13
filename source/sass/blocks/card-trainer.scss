@@ -6,8 +6,13 @@
   margin-right: 40px;
   overflow: hidden;
 
-  @include vp-1023 {
+  @include vp-1201 {
     height: 39vw;
+  }
+
+  @include vp-767 {
+    min-height: 274px;
+    height: 72vw;
   }
 }
 
@@ -37,9 +42,12 @@
   height: 22vw;
   min-height: 294px;
 
-  @include vp-1023 {
+  @include vp-1201 {
     height: 39vw;
-    min-height: 294px;
+  }
+
+  @include vp-767 {
+    height: 72vw;
   }
 }
 
@@ -52,7 +60,7 @@
   z-index: -1;
   overflow: auto;
 
-  @include vp-1023 {
+  @include vp-1201 {
     padding: 56px 12px 0 12px;
   }
 }
@@ -71,7 +79,7 @@
   margin: 0 auto;
   margin-bottom: -5px;
 
-  @include vp-1023 {
+  @include vp-1201 {
     @include font(18px, 109%, 700);
     margin-bottom: 0;
     text-align: center;
@@ -89,7 +97,7 @@
 }
 
 .card-trainer__list-description {
-  @include vp-1023 {
+  @include vp-1201 {
     padding: 0 12px 0 47px;
   }
 }
