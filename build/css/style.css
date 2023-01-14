@@ -2401,6 +2401,7 @@ a,
   font-weight: 700;
   -webkit-text-fill-color: #ffffff;
   margin: 0;
+  margin-bottom: 25px;
 }
 
 .advantages__count span {
@@ -2412,6 +2413,9 @@ a,
 }
 
 .advantages__content-title {
+  font-size: 22px;
+  line-height: 150%;
+  font-weight: 700;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -2425,6 +2429,9 @@ a,
 }
 
 .advantages__description {
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 300;
   margin: 0;
 }
 
@@ -2817,6 +2824,7 @@ a,
 
   .advantages__item--gym {
     width: 65.2%;
+    padding: 45px 34px;
     margin: 0 auto;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -2830,6 +2838,30 @@ a,
     font-size: 58px;
     line-height: 80%;
     font-weight: 700;
+  }
+
+  .advantages__count--gym {
+    margin-bottom: 20px;
+  }
+
+  .advantages__content-title {
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .advantages__content-title--gym {
+    font-size: 22px;
+    line-height: 150%;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  .advantages__description--gym {
+    width: 51.5%;
+    margin: 0 auto;
+    margin-bottom: 28px;
   }
 }
 
@@ -3043,6 +3075,68 @@ a,
 
   .card-trainer__images img {
     height: 72vw;
+  }
+
+  .advantages__container {
+    padding: 70px 0 20px 0;
+  }
+
+  .advantages__container h2 {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 600;
+    margin: 0 auto 60px;
+    width: 245px;
+  }
+
+  .advantages__list {
+    display: block;
+  }
+
+  .advantages__item {
+    margin-bottom: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 46px;
+  }
+
+  .advantages__item--gym {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .advantages__count {
+    background: -o-linear-gradient(277.39deg, #d10a42 0%, #0041ca 35.58%);
+    background: linear-gradient(172.61deg, #d10a42 0%, #0041ca 35.58%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-right: 0;
+  }
+
+  .advantages__count--gym {
+    margin-bottom: 15px;
+    -webkit-text-fill-color: #ffffff;
+  }
+
+  .advantages__content-title--gym {
+    margin-bottom: 25px;
+  }
+
+  .advantages__description {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .advantages__description--gym {
+    width: 94.5%;
   }
 }
 

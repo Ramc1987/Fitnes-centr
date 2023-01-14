@@ -10,6 +10,10 @@
     padding-top: 100px;
     padding-bottom: 100px;
   }
+
+  @include vp-767 {
+    padding: 70px 0 20px 0;
+  }
 }
 
 .advantages__container h2 {
@@ -22,7 +26,15 @@
 
   @include vp-1023 {
     @include font(42px, 50px, 600);
+
     margin: 0 auto 61px;
+  }
+
+  @include vp-767 {
+    @include font(32px, 38px, 600);
+
+    margin: 0 auto 60px;
+    width: 245px;
   }
 }
 
@@ -39,10 +51,22 @@
     gap: 50px 60px;
     width: 100%;
   }
+
+  @include vp-767 {
+    display: block;
+  }
 }
 
 .advantages__item {
   display: flex;
+
+  @include vp-767 {
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 46px;
+  }
 
   &--space {
     padding-bottom: 84px;
@@ -92,9 +116,16 @@
 
     @include vp-1023 {
       width: 65.2%;
+      padding: 45px 34px;
       margin: 0 auto;
       grid-column: 1/3;
       grid-row: 2/3;
+    }
+
+    @include vp-767 {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
   }
 }
@@ -118,11 +149,28 @@
     @include font(58px, 80%, 700);
   }
 
+  @include vp-767 {
+    background: linear-gradient(172.61deg, #d10a42 0%, #0041ca 35.58%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-right: 0;
+  }
+
   &--gym {
     @include font(74px, 150%, 700);
     -webkit-text-fill-color: $second-color;
 
     margin: 0;
+    margin-bottom: 25px;
+
+    @include vp-1023 {
+      margin-bottom: 20px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 15px;
+      -webkit-text-fill-color: $second-color;
+    }
   }
 }
 
@@ -134,21 +182,56 @@
 }
 
 .advantages__content-title {
+  @include font(22px, 150%, 700);
+
   margin: 0;
   margin-bottom: 20px;
+
+  @include vp-1023 {
+    @include font(20px, 150%, 700);
+
+    margin-bottom: 15px;
+  }
 
   &--gym {
     @include font(26px, 150%, 700);
     color: $second-color;
     margin-bottom: 50px;
+
+    @include vp-1023 {
+      @include font(22px, 150%, 700);
+
+      margin-bottom: 30px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 25px;
+    }
   }
 }
 
 .advantages__description {
+  @include font(16px, 140%, 300);
+
   margin: 0;
+
+  @include vp-767 {
+    width: 100%;
+    margin: 0 auto;
+  }
 
   &--gym {
     @include font(16px, 150%, 400);
     color: $second-color;
+
+    @include vp-1023 {
+      width: 51.5%;
+      margin: 0 auto;
+      margin-bottom: 28px;
+    }
+
+    @include vp-767 {
+      width: 94.5%;
+    }
   }
 }
