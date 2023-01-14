@@ -1,0 +1,199 @@
+.stock__container {
+  padding-top: 149px;
+  padding-bottom: 117px;
+
+  @include vp-1023 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+.stock__container h2 {
+  @include font(54px, 65px, 600);
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  max-width: 200px;
+  margin: 0 auto;
+  margin-bottom: 34px;
+
+  @include vp-1023 {
+    @include font(42px, 50px, 600);
+    margin-bottom: 50px;
+  }
+
+  @include vp-767 {
+    @include font(32px, 38px, 600);
+  }
+}
+
+.stock__container-wrapper {
+  display: grid;
+  grid-template-columns: 560px 1fr;
+  column-gap: 40px;
+
+  @include vp-1023 {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}
+
+.stock__unlimited-wrapper {
+  width: 50.28%;
+  display: grid;
+  grid-template-columns: repeat(2, 280px);
+  justify-content: space-between;
+  background-color: #ed0233;
+
+  @include vp-1023 {
+    width: 100%;
+    grid-template-columns: 279px 1fr;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.stock__unlimited-content {
+  display: flex;
+  flex-direction: column;
+
+  padding: 45px;
+
+  @include vp-767 {
+    text-align: center;
+  }
+}
+
+.stock__unlimited-list dt,
+dd,
+p,
+a {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: $second-color;
+}
+
+.stock__unlimited-list dt {
+  @include font(28px, 32px, 700);
+
+  width: 100%;
+  margin-bottom: 19px;
+}
+
+.stock__unlimited-list dd {
+  @include font(70px, 74px, 700);
+
+  margin: 0;
+  margin-bottom: 35px;
+
+  @include vp-767 {
+    margin-bottom: 30px;
+  }
+}
+
+.stock__unlimited-content p {
+  @include font(18px, 140%, 400);
+  color: $second-color;
+
+  margin: 0;
+  margin-bottom: auto;
+
+  @include vp-767 {
+    margin-bottom: 40px;
+  }
+}
+
+.stock__unlimited-content a {
+  @include font(14px, 16px, 700);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $second-color;
+
+  width: max-content;
+  max-width: 150px;
+  margin: 0 auto;
+  border-bottom: 1px solid $second-color;
+  display: block;
+}
+
+.stock__unlimited-img {
+  height: 100%;
+  object-fit: cover;
+
+  @include vp-1023 {
+    width: 100%;
+  }
+}
+
+.stock__tarif-list {
+  display: grid;
+  row-gap: 50px;
+
+  @include vp-1023 {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}
+
+.stock__tarif-item {
+  border-width: 7px;
+  border-style: solid;
+  border-image: linear-gradient(to right bottom, #d10a42, #00359f) 1;
+}
+
+.stock__tarif-content {
+  padding-top: 28px;
+  padding-left: 28px;
+  padding-bottom: 15px;
+  padding-right: 28px;
+
+  @include vp-767 {
+    text-align: center;
+  }
+}
+
+.stock__tarif-content h3,
+p,
+a {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  margin: 0;
+  color: $primary-color;
+}
+
+.stock__tarif-content h3 {
+  @include font(26px, 32px, 700);
+
+  margin-bottom: 20px;
+}
+
+.stock__tarif-content p {
+  @include font(16px, 22px, 400);
+
+  margin-bottom: 20px;
+}
+
+.stock__tarif-content a {
+  @include font(12px, 14px, 700);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  border-bottom: 1px solid $primary-color;
+  width: fit-content;
+  max-width: 150px;
+  display: block;
+
+  @include vp-767 {
+    margin: 0 auto 20px;
+  }
+}

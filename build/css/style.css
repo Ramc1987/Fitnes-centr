@@ -2442,6 +2442,167 @@ a,
   color: #ffffff;
 }
 
+.stock__container {
+  padding-top: 149px;
+  padding-bottom: 117px;
+}
+
+.stock__container h2 {
+  font-size: 54px;
+  line-height: 65px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-align: center;
+  max-width: 200px;
+  margin: 0 auto;
+  margin-bottom: 34px;
+}
+
+.stock__container-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 560px 1fr;
+  grid-template-columns: 560px 1fr;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+}
+
+.stock__unlimited-wrapper {
+  width: 50.28%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (280px)[2];
+  grid-template-columns: repeat(2, 280px);
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #ed0233;
+}
+
+.stock__unlimited-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 45px;
+}
+
+.stock__unlimited-list dt,
+dd,
+p,
+a {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #ffffff;
+}
+
+.stock__unlimited-list dt {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 700;
+  width: 100%;
+  margin-bottom: 19px;
+}
+
+.stock__unlimited-list dd {
+  font-size: 70px;
+  line-height: 74px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.stock__unlimited-content p {
+  font-size: 18px;
+  line-height: 140%;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: auto;
+}
+
+.stock__unlimited-content a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 150px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ffffff;
+  display: block;
+}
+
+.stock__unlimited-img {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.stock__tarif-list {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 50px;
+}
+
+.stock__tarif-item {
+  border-width: 7px;
+  border-style: solid;
+  -o-border-image: -o-linear-gradient(left top, #d10a42, #00359f) 1;
+  border-image: -webkit-gradient(linear, left top, right bottom, from(#d10a42), to(#00359f)) 1;
+  border-image: linear-gradient(to right bottom, #d10a42, #00359f) 1;
+}
+
+.stock__tarif-content {
+  padding-top: 28px;
+  padding-left: 28px;
+  padding-bottom: 15px;
+  padding-right: 28px;
+}
+
+.stock__tarif-content h3,
+p,
+a {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  margin: 0;
+  color: #102654;
+}
+
+.stock__tarif-content h3 {
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.stock__tarif-content p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.stock__tarif-content a {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #102654;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 150px;
+  display: block;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -2863,6 +3024,42 @@ a,
     margin: 0 auto;
     margin-bottom: 28px;
   }
+
+  .stock__container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .stock__container h2 {
+    font-size: 42px;
+    line-height: 50px;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
+
+  .stock__container-wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .stock__unlimited-wrapper {
+    width: 100%;
+    -ms-grid-columns: 279px 1fr;
+    grid-template-columns: 279px 1fr;
+  }
+
+  .stock__unlimited-img {
+    width: 100%;
+  }
+
+  .stock__tarif-list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -3137,6 +3334,48 @@ a,
 
   .advantages__description--gym {
     width: 94.5%;
+  }
+
+  .stock__container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .stock__container h2 {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 600;
+  }
+
+  .stock__unlimited-wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .stock__unlimited-content {
+    text-align: center;
+  }
+
+  .stock__unlimited-list dd {
+    margin-bottom: 30px;
+  }
+
+  .stock__unlimited-content p {
+    margin-bottom: 40px;
+  }
+
+  .stock__tarif-list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .stock__tarif-content {
+    text-align: center;
+  }
+
+  .stock__tarif-content a {
+    margin: 0 auto 20px;
   }
 }
 
