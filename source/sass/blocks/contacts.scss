@@ -34,44 +34,74 @@
   }
 }
 
-.contacts__list {
+.contacts__list-wrapper {
   display: grid;
   grid-template-columns: 1fr 170px;
-  column-gap: 30px;
-  width: 84.67%;
+  row-gap: 30px;
+
+  max-width: 400px;
+
+  @include vp-1023 {
+    grid-template-columns: 1fr 190px;
+    row-gap: 35px;
+
+    width: 77.1%;
+    max-width: 100%;
+  }
 
   @include vp-767 {
     grid-template-columns: 1fr;
+    row-gap: 30px;
   }
 }
 
-.contacts__item {
-  margin-bottom: 30px;
+.contacts__company-info,
+.contacts__schedule-company {
+  display: grid;
+  row-gap: 30px;
 }
 
-.contacts__list h3,
-p {
+.contacts__schedule-company {
+  padding-left: 60px;
+
+  @include vp-1023 {
+    padding-left: 48px;
+  }
+
+  @include vp-767 {
+    padding-left: 0;
+  }
+}
+
+.contacts__company-info {
+  border-right: 1px solid #74819c;
+
+  @include vp-767 {
+    border: none;
+  }
+}
+
+.contacts__item h3 {
+  @include font(16px, 150%, 700);
   font-family: "Roboto Condensed", "Arial", sans-serif;
 
   margin: 0;
-}
-
-.contacts__list h3 {
-  @include font(16px, 150%, 700);
-
   margin-bottom: 15px;
 
   @include vp-1023 {
     @include font(20px, 150%, 700);
+
+    margin-bottom: 20px;
   }
 }
 
-.contacts__list p {
+.contacts__item address,
+p,
+a {
   @include font(14px, 21px, 400);
-
-  margin-bottom: 15px;
+  font-style: normal;
 
   @include vp-1023 {
-    @include font(18px, 152%, 400);
+    @include font(18px, 152%, 700);
   }
 }
