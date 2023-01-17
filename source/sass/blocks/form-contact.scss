@@ -1,0 +1,8 @@
+.form-contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include vp-1023 {
+    grid-template-columns: 1fr;
+  }
+}

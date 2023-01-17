@@ -1,0 +1,102 @@
+.free-lesson {
+  background-color: $primary-color;
+}
+
+.free-lesson__container {
+  padding-top: 56px;
+  padding-left: 103px;
+  padding-right: 0;
+  padding-bottom: 70px;
+
+  @include vp-1023 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 88px;
+    padding-right: 88px;
+  }
+
+  @include vp-767 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+.free-lesson__container h2 {
+  @include font(54px, 156%, 800);
+  letter-spacing: 0.03em;
+  color: $second-color;
+
+  width: 410px;
+  margin: 0;
+  margin-bottom: 24px;
+
+  @include vp-1023 {
+    @include font(42px, 50px, 700);
+  }
+
+  @include vp-767 {
+    @include font(32px, 38px, 600);
+
+    width: 260px;
+  }
+}
+
+.free-lesson__form {
+  width: 82.17%;
+
+  @include vp-1023 {
+    width: 79.73%;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.free-lesson__inputs-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+}
+
+.free-lesson__form-input {
+  width: 46.72%;
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.free-lesson__form-input input {
+  margin-bottom: 30px;
+  padding: 0;
+  width: 100%;
+
+  border: none;
+  border-bottom: 1px solid #74819c;
+  background: transparent;
+
+  &::placeholder {
+    @include font(14px, 16px, 400);
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    color: $second-color;
+  }
+}
+
+.free-lesson__form-button-submit {
+  width: 100%;
+  border: 3px solid $second-color;
+  background-color: transparent;
+  padding: 21px 0;
+
+  @include font(14px, 16px, 700);
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $second-color;
+}

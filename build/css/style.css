@@ -2603,6 +2603,170 @@ a {
   display: block;
 }
 
+.form-contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.free-lesson {
+  background-color: #102654;
+}
+
+.free-lesson__container {
+  padding-top: 56px;
+  padding-left: 103px;
+  padding-right: 0;
+  padding-bottom: 70px;
+}
+
+.free-lesson__container h2 {
+  font-size: 54px;
+  line-height: 156%;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  width: 410px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.free-lesson__form {
+  width: 82.17%;
+}
+
+.free-lesson__inputs-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.free-lesson__form-input {
+  width: 46.72%;
+}
+
+.free-lesson__form-input input {
+  margin-bottom: 30px;
+  padding: 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #74819c;
+  background: transparent;
+}
+
+.free-lesson__form-input input::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #ffffff;
+}
+
+.free-lesson__form-input input::-moz-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #ffffff;
+}
+
+.free-lesson__form-input input:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #ffffff;
+}
+
+.free-lesson__form-input input::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #ffffff;
+}
+
+.free-lesson__form-input input::placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #ffffff;
+}
+
+.free-lesson__form-button-submit {
+  width: 100%;
+  border: 3px solid #ffffff;
+  background-color: transparent;
+  padding: 21px 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+.contacts {
+  background-color: #ffffff;
+}
+
+.contacts__container {
+  padding-top: 56px;
+}
+
+.contacts__container h2 {
+  font-size: 54px;
+  line-height: 65px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 43px;
+}
+
+.contacts__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 170px;
+  grid-template-columns: 1fr 170px;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  width: 84.67%;
+}
+
+.contacts__item {
+  margin-bottom: 30px;
+}
+
+.contacts__list h3,
+p {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  margin: 0;
+}
+
+.contacts__list h3 {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.contacts__list p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -3060,6 +3224,53 @@ a {
     -moz-column-gap: 30px;
     column-gap: 30px;
   }
+
+  .form-contact {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .free-lesson__container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 88px;
+    padding-right: 88px;
+  }
+
+  .free-lesson__container h2 {
+    font-size: 42px;
+    line-height: 50px;
+    font-weight: 700;
+  }
+
+  .free-lesson__form {
+    width: 79.73%;
+  }
+
+  .contacts__container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 88px;
+    padding-right: 88px;
+  }
+
+  .contacts__container h2 {
+    font-size: 42px;
+    line-height: 50px;
+    font-weight: 600;
+  }
+
+  .contacts__list h3 {
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 700;
+  }
+
+  .contacts__list p {
+    font-size: 18px;
+    line-height: 152%;
+    font-weight: 400;
+  }
 }
 
 @media (max-width: 767px) {
@@ -3376,6 +3587,49 @@ a {
 
   .stock__tarif-content a {
     margin: 0 auto 20px;
+  }
+
+  .free-lesson__container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .free-lesson__container h2 {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 600;
+    width: 260px;
+  }
+
+  .free-lesson__form {
+    width: 100%;
+  }
+
+  .free-lesson__inputs-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .free-lesson__form-input {
+    width: 100%;
+  }
+
+  .contacts__container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .contacts__container h2 {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 600;
+  }
+
+  .contacts__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
