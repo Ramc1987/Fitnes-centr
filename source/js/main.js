@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {videoEnabled} from './modules/video-play';
 import {activatesTabs} from './modules/tabs';
 import {initSwiperTrainer} from './modules/swiper-trainer';
+import {initSwiperReviews} from './modules/swiper-reviews';
 
 
 // ---------------------------------
@@ -16,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
   videoEnabled();
 
   initSwiperTrainer(swiper);
+  initSwiperReviews(swiper);
 
   // Modules
   // ---------------------------------
