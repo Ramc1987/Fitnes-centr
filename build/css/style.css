@@ -2395,8 +2395,8 @@ a,
 .advantages__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 240px auto;
-  grid-template-columns: auto 240px auto;
+  -ms-grid-columns: 1fr 240px 1fr;
+  grid-template-columns: 1fr 240px 1fr;
   -webkit-column-gap: 60px;
   -moz-column-gap: 60px;
   column-gap: 60px;

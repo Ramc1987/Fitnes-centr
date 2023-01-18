@@ -40,7 +40,7 @@
 
 .advantages__list {
   display: grid;
-  grid-template-columns: auto 240px auto;
+  grid-template-columns: 1fr 240px 1fr;
   column-gap: 60px;
   max-width: 1040px;
   width: 90%;
