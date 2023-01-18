@@ -108,11 +108,22 @@
   }
 }
 
+.promo-gym__gallery {
+  position: relative;
+}
+
+.promo-gym__gallery img {
+  @include vp-1023 {
+    width: 100%;
+  }
+}
+
 .promo-gym__image img {
   width: 100%;
   height: 29.3vw;
 
   @include vp-1023 {
+    width: 100%;
     height: 44.9vw;
   }
 

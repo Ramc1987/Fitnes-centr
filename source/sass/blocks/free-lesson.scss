@@ -85,11 +85,21 @@
     font-family: "Roboto Condensed", "Arial", sans-serif;
     color: $second-color;
   }
+
+  @include hover {
+    border-bottom: 1px solid $hover-color;
+  }
+
+  @include focus {
+    outline: 1px solid $focus-color;
+    outline-offset: 4px;
+  }
 }
 
 .free-lesson__form-button-submit {
   width: 100%;
-  border: 3px solid $second-color;
+  border: none;
+  outline: 3px solid $second-color;
   background-color: transparent;
   padding: 21px 0;
 
@@ -99,4 +109,13 @@
   text-transform: uppercase;
   text-align: center;
   color: $second-color;
+
+  @include hover {
+    outline: 1px solid $hover-color;
+  }
+
+  @include focus {
+    outline: 1px solid $focus-color;
+    outline-offset: 4px;
+  }
 }

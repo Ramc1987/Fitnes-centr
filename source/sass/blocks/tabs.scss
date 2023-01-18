@@ -103,6 +103,12 @@
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #10265480;
 
+  @include hover-focus {
+    color: $second-color;
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    outline: none;
+  }
+
   &--active {
     position: relative;
     color: $primary-color;
@@ -131,11 +137,11 @@
   }
 }
 
-.tab__list {
+.tabs__list {
   display: none;
 }
 
-.tab__list--active {
+.tabs__list--active {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
@@ -146,7 +152,7 @@
   }
 }
 
-.tab__item {
+.tabs__item {
   background-color: #ffffff;
   border: 7px solid transparent;
   z-index: 1;
@@ -157,9 +163,14 @@
     border-image: linear-gradient(to right bottom, #d10a42, #00359f) 1;
     cursor: pointer;
   }
+
+  @include focus {
+    color: $second-color;
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  }
 }
 
-.tab__item:hover .tab__link-button {
+.tabs__item:hover .tabs__link-button {
   position: relative;
   z-index: 1;
   color: #ffffff;
@@ -177,7 +188,7 @@
   }
 }
 
-.tab__item-wrapper {
+.tabs__item-wrapper {
   position: relative;
   padding: 50px 0 59px 0;
   display: flex;
@@ -194,7 +205,7 @@
   }
 }
 
-.tab__item-wrapper h3,
+.tabs__item-wrapper h3,
 span,
 b,
 a,
@@ -202,7 +213,7 @@ a,
   font-family: "Roboto Condensed", "Arial", sans-serif;
 }
 
-.tab__item-wrapper h3 {
+.tabs__item-wrapper h3 {
   @include font(26px, 40px, 700);
   text-align: center;
 
@@ -216,7 +227,7 @@ a,
   }
 }
 
-.tab__item-wrapper span {
+.tabs__item-wrapper span {
   @include font(16px, 150%, 400);
   color: #495a7d;
   text-align: center;
@@ -229,7 +240,7 @@ a,
   }
 }
 
-.tab__item-wrapper b {
+.tabs__item-wrapper b {
   position: relative;
   z-index: 1;
   margin-bottom: 33px;
@@ -286,7 +297,7 @@ a,
   }
 }
 
-.tab__item-wrapper a {
+.tabs__item-wrapper a {
   @include font(12px, 14px, 700);
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -295,5 +306,11 @@ a,
 
   @include vp-1023 {
     padding: 25px 44px 22px 44px;
+  }
+
+  @include hover-focus {
+    color: $second-color;
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    border: 1px solid $second-color;
   }
 }

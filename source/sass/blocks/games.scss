@@ -145,6 +145,11 @@
     padding: 13px 52px 11px 50px;
     outline: 2px solid $second-color;
   }
+
+  @include hover-focus {
+    color: $second-color;
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  }
 }
 
 .games__images img {

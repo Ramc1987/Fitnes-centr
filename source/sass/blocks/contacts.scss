@@ -82,6 +82,17 @@
   }
 }
 
+.contacts__item-link {
+  @include hover {
+    color: $hover-color;
+  }
+
+  @include focus {
+    outline: 1px solid $focus-color;
+    outline-offset: 4px;
+  }
+}
+
 .contacts__item h3 {
   @include font(16px, 150%, 700);
   font-family: "Roboto Condensed", "Arial", sans-serif;

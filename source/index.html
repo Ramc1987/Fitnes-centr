@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
+    <meta name="description" content="Фитнес центр.">
+    <title>Fitnes-centre</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/AlumniSans-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
     <div class="wrapper">
@@ -14,7 +20,7 @@
         <div class="header__wrapper">
           <div class="header__container container">
             <nav class="header__nav nav">
-              <a class="nav__logo logo" href="#">
+              <a class="nav__logo logo">
                 <svg class="logo__icon" role="img" aria-label="Логотип сайта SUPERGYM" width="122" height="44">
                   <use xlink:href="img/sprite.svg#logo-header"></use>
                 </svg>
@@ -56,23 +62,23 @@
                 <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место&nbsp; для&nbsp; укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
                 <p>В&nbsp;зале расположены отдельная зона для Crossfit и кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
               </div>
-              <div class="promo-gym__image">
+              <div class="promo-gym__gallery">
                 <picture>
                   <source type="image/webp" srcset="img/content-images/gym@1x.webp 1x, img/content-images/gym@2x.webp 2x">
                   <img src="img/content-images/gym@1x.jpg" srcset="img/content-images/gym@2x.jpg 2x" width="660" height="401" loading="lazy" alt="Наш спортзал.">
                 </picture>
+                <div class="promo-gym__video video">
+                  <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw" aria-label="Промо видео нашего зала">
+                    <picture>
+                      <source type="image/webp" srcset="img/content-images/gym-video@1x.webp 1x, img/content-images/gym-video@2x.webp 2x">
+                      <img class="video__media" src="img/content-images/gym-video@1x.jpg" srcset="img/content-images/gym-video@2x.jpg 2x" width="364" height="228" alt="Промо видео нашего зала">
+                    </picture>
+                  </a>
+                  <button class="video__button" aria-label="Звпустить видео">
+                    <img src="img/svg/play-button.svg" alt="">
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="promo-gym__video video">
-              <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw" aria-label="Промо видео нашего зала">
-                <picture>
-                  <source type="image/webp" srcset="img/content-images/gym-video@1x.webp 1x, img/content-images/gym-video@2x.webp 2x">
-                  <img class="video__media" src="img/content-images/gym-video@1x.jpg" srcset="img/content-images/gym-video@2x.jpg 2x" width="364" height="228" alt="Промо видео нашего зала">
-                </picture>
-              </a>
-              <button class="video__button" aria-label="Звпустить видео">
-                <img src="img/svg/play-button.svg" alt="">
-              </button>
             </div>
           </div>
         </section>
@@ -85,81 +91,81 @@
               <button class="tabs__button" type="button" data-target="#twelve-month">12 месяцев</button>
             </div>
             <div class="tabs__info-list">
-              <ul class="tab__list tab__list--active reset-list" id="one-month">
-                <li class="tab__item">
-                  <div class="tab__item-wrapper">
+              <ul class="tabs__list tabs__list--active reset-list" id="one-month">
+                <li class="tabs__item">
+                  <div class="tabs__item-wrapper">
                     <h3>С тренером</h3>
                     <span>12 занятий</span>
                     <b data-parent="5000">5000</b>
-                    <a class="tab__link-button" href="#">купить абонемент</a>
+                    <a class="tabs__link-button" href="#">купить абонемент</a>
                   </div>
                 </li>
-                <li class="tab__item">
-                  <div class="tab__item-wrapper">
+                <li class="tabs__item">
+                  <div class="tabs__item-wrapper">
                     <h3>Дневной</h3>
                     <span>с&nbsp;8:00 до&nbsp;17:00</span>
                     <b data-parent="1700">1700</b>
-                    <a class="tab__link-button" href="#">купить абонемент</a>
+                    <a class="tabs__link-button" href="#">купить абонемент</a>
                   </div>
                 </li>
-                <li class="tab__item">
-                  <div class="tab__item-wrapper">
+                <li class="tabs__item">
+                  <div class="tabs__item-wrapper">
                     <h3>Полный день</h3>
                     <span>с&nbsp;8:00 до&nbsp;22:00</span>
                     <b data-parent="2700">2700</b>
-                    <a class="tab__link-button" href="#">купить абонемент</a>
+                    <a class="tabs__link-button" href="#">купить абонемент</a>
                   </div>
                 </li>
               </ul>
-              <ul class="tab__list reset-list" id="six-month">
-                <li class="tab__item">
-                  <div class="tab__item-wrapper">
+              <ul class="tabs__list reset-list" id="six-month">
+                <li class="tabs__item">
+                  <div class="tabs__item-wrapper">
                     <h3>С тренером</h3>
                     <span>72 занятий</span>
                     <b data-parent="10000">10000</b>
-                    <a class="tab__link-button" href="#">купить абонемент</a>
+                    <a class="tabs__link-button" href="#">купить абонемент</a>
                   </div>
                 </li>
-                <li class="tab__item">
-                  <div class="tab__item-wrapper">
+                <li class="tabs__item">
+                  <div class="tabs__item-wrapper">
                     <h3>Дневной</h3>
                     <span>с&nbsp;8:00 до&nbsp;17:00</span>
                     <b data-parent="2700">2700</b>
-                    <a class="tab__link-button" href="#">купить абонемент</a>
+                    <a class="tabs__link-button" href="#">купить абонемент</a>
                   </div>
                 </li>
-                <li class="tab__item">
-                  <div class="tab__item-wrapper">
+                <li class="tabs__item">
+                  <div class="tabs__item-wrapper">
                     <h3>Полный день</h3>
                     <span>с&nbsp;8:00 до&nbsp;22:00</span>
                     <b data-parent="4700">4700</b>
-                    <a class="tab__link-button" href="#">купить абонемент</a>
+                    <a class="tabs__link-button" href="#">купить абонемент</a>
                   </div>
                 </li>
               </ul>
-              <ul class="tab__list reset-list" id="twelve-month">
-                <li class="tab__item">
-                  <div class="tab__item-wrapper">
+              <ul class="tabs__list reset-list" id="twelve-month">
+                <li class="tabs__item">
+                  <div class="tabs__item-wrapper">
                     <h3>С тренером</h3>
                     <span>150 занятий</span>
                     <b data-parent="25000">25000</b>
-                    <a class="tab__link-button" href="#">купить абонемент</a>
+                    <a class="tabs__link-button" href="#">купить абонемент</a>
                   </div>
                 </li>
-                <li class="tab__item">
-                  <div class="tab__item-wrapper">
+                <li class="tabs__item">
+                  <div class="tabs__item-wrapper">
                     <h3>Дневной</h3>
                     <span>с&nbsp;8:00 до&nbsp;17:00</span>
                     <b data-parent="1300">1300</b>
-                    <a class="tab__link-button" href="#">купить абонемент</a>
+                    <a class="tabs__link-button" href="#">купить абонемент</a>
                   </div>
                 </li>
-                <li class="tab__item">
-                  <div class="tab__item-wrapper">
+                <li class="tabs__item">
+                  <div class="tabs__item-wrapper">
                     <h3>Полный день</h3>
                     <span>с&nbsp;8:00 до&nbsp;22:00</span>
                     <b data-parent="6500">6500</b>
-                    <a class="tab__link-button" href="#">купить абонемент</a>
+                    <a class="tabs__link-button" href="#">купить абонемент</a>
                   </div>
                 </li>
               </ul>
@@ -199,7 +205,7 @@
           </div>
           <div class="trainer__swiper">
             <div class="trainer__swaper-slides swiper" id="swiperTrainer">
-              <ul class="swaper__list swiper-wrapper reset-list">
+              <ul class="swiper__list swiper-wrapper reset-list">
                 <li class="swiper__card card-trainer swiper-slide" tabindex="0">
                   <div class="card-trainer__front">
                     <h3>Анна Павлова</h3>
@@ -478,7 +484,7 @@
                   <li class="slider__card swiper-slide">
                     <div class="slider__image">
                       <picture>
-                        <source type="image/webp" srcset="img/content-images/reviews-slide@1x.webp 1x, img/content-images/review-slide@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content-images/reviews-slide@1x.webp 1x, img/content-images/reviews-slide@2x.webp 2x">
                         <img src="img/content-images/reviews-slide@1x.jpg" srcset="img/content-images/reviews-slide@2x.jpg 2x" width="80" height="80" loading="lazy" alt="Фото пользователя, который оставил отзыв.">
                       </picture>
                     </div>
@@ -488,7 +494,7 @@
                   <li class="slider__card swiper-slide">
                     <div class="slider__image">
                       <picture>
-                        <source type="image/webp" srcset="img/content-images/reviews-slide@1x.webp 1x, img/content-images/review-slide@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content-images/reviews-slide@1x.webp 1x, img/content-images/reviews-slide@2x.webp 2x">
                         <img src="img/content-images/reviews-slide@1x.jpg" srcset="img/content-images/reviews-slide@2x.jpg 2x" width="80" height="80" loading="lazy" alt="Фото пользователя, который оставил отзыв.">
                       </picture>
                     </div>
@@ -498,7 +504,7 @@
                   <li class="slider__card swiper-slide">
                     <div class="slider__image">
                       <picture>
-                        <source type="image/webp" srcset="img/content-images/reviews-slide@1x.webp 1x, img/content-images/review-slide@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content-images/reviews-slide@1x.webp 1x, img/content-images/reviews-slide@2x.webp 2x">
                         <img src="img/content-images/reviews-slide@1x.jpg" srcset="img/content-images/reviews-slide@2x.jpg 2x" width="80" height="80" loading="lazy" alt="Фото пользователя, который оставил отзыв.">
                       </picture>
                     </div>

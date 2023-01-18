@@ -1,6 +1,11 @@
 .logo {
   display: inline-block;
   vertical-align: baseline;
+  cursor: default;
+
+  &:focus-within {
+    outline: 1px solid $focus-color;
+  }
 }
 
 .logo__icon {
