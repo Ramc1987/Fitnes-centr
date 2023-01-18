@@ -2721,6 +2721,7 @@ a {
 
 .contacts__container {
   padding-top: 56px;
+  padding-bottom: 70px;
 }
 
 .contacts__container h2 {
@@ -2767,11 +2768,144 @@ a {
 
 .contacts__item address,
 p,
-a {
+.contacts__item-link {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   font-style: normal;
+}
+
+.footer {
+  background-color: #030a1a;
+}
+
+.footer__container {
+  padding-top: 44px;
+  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.footer__logo-link {
+  display: block;
+  margin-right: auto;
+  cursor: default;
+}
+
+.footer__logo-link.focus-visible:focus {
+  outline: 1px solid #009dff;
+  outline-offset: 2px;
+}
+
+.footer__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 40px;
+  width: 796px;
+}
+
+.footer__nav-item:first-child {
+  margin-right: auto;
+}
+
+.footer__nav-item:not(:last-child, :first-child) {
+  margin-right: 40px;
+}
+
+.footer__nav-link {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #ffffff;
+  -webkit-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  position: relative;
+}
+
+.footer__nav-link.focus-visible:focus {
+  outline: 1px solid #009dff;
+  outline-offset: 2px;
+}
+
+.footer__nav-link:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+  background-color: #0079c4;
+  color: #0079c4;
+  -webkit-transition: width 0.5s;
+  -o-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.footer__nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+  background-color: #0079c4;
+  color: #0079c4;
+  -webkit-transition: width 0.5s;
+  -o-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.social {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 11px;
+  -moz-column-gap: 11px;
+  column-gap: 11px;
+  row-gap: 11px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 97px;
+}
+
+.social__item {
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+}
+
+.social__item:hover .social__link-icon {
+  fill: #0079c4;
+}
+
+.social__item:focus-within {
+  outline: 1px solid #009dff;
+  outline-offset: 2px;
+}
+
+.social__link-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  fill: #030a1a;
 }
 
 /* @mixin hover-focus {
@@ -3288,10 +3422,33 @@ a {
 
   .contacts__item address,
   p,
-  a {
+  .contacts__item-link {
     font-size: 18px;
     line-height: 152%;
     font-weight: 700;
+  }
+
+  .footer__container {
+    padding-top: 47px;
+    padding-bottom: 49px;
+  }
+
+  .footer__logo-icon {
+    width: 82px;
+    height: 18px;
+  }
+
+  .footer__logo-icon {
+    width: 68px;
+    height: 15px;
+  }
+
+  .footer__nav-list {
+    width: 78.91%;
+  }
+
+  .footer__nav-item:not(:last-child, :first-child) {
+    margin-right: 30px;
   }
 }
 
@@ -3661,6 +3818,50 @@ a {
 
   .contacts__company-info {
     border: none;
+  }
+
+  .footer__container {
+    padding-top: 50px;
+    padding-bottom: 52px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .footer__nav-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+
+  .footer__nav-item--services {
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+
+  .footer__nav-item--season-tickets {
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+
+  .footer__nav-item {
+    margin-bottom: 30px;
+  }
+
+  .footer__nav-item:first-child {
+    margin-bottom: 28px;
+  }
+
+  .footer__nav-item:not(:last-child, :first-child) {
+    margin-right: 71px;
   }
 }
 

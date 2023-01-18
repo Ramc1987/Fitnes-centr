@@ -4,6 +4,7 @@
 
 .contacts__container {
   padding-top: 56px;
+  padding-bottom: 70px;
 
   @include vp-1023 {
     padding-top: 70px;
@@ -97,7 +98,7 @@
 
 .contacts__item address,
 p,
-a {
+.contacts__item-link {
   @include font(14px, 21px, 400);
   font-style: normal;
 
