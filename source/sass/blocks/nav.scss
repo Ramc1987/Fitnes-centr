@@ -10,6 +10,8 @@
 }
 
 .nav__link-tel {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+
   @include font(26px, 31px, 600);
   letter-spacing: 0.03em;
   color: $second-color;

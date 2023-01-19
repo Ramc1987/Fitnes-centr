@@ -22,7 +22,7 @@
   letter-spacing: 0.03em;
 
   width: 400px;
-  margin: 0 auto 55px;
+  margin: 0 auto 55px 386px;
 
   @include vp-1023 {
     @include font(42px, 50px, 600);
@@ -58,11 +58,14 @@
 }
 
 .advantages__item {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 340px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  max-width: fit-content;
+  min-width: 340px;
+  padding-left: 19px;
 
   @include vp-767 {
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;

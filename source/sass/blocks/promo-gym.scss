@@ -15,7 +15,7 @@
 .promo-gym__description {
   display: grid;
   grid-template-columns: 415px auto;
-  gap: 85px;
+  gap: 22px;
 
   @include vp-1023 {
     display: block;
@@ -112,24 +112,27 @@
   position: relative;
 }
 
-.promo-gym__gallery img {
-  @include vp-1023 {
-    width: 100%;
-  }
-}
-
-.promo-gym__image img {
-  width: 100%;
+.promo-gym__gallery-image {
+  margin-left: auto;
   height: 29.3vw;
 
   @include vp-1023 {
     width: 100%;
-    height: 44.9vw;
-  }
-
-  @include vp-767 {
-    height: 97.9vw;
-    object-fit: cover;
-    object-position: -135px 0;
   }
 }
+
+// .promo-gym__image img {
+//   width: 100%;
+//   height: 29.3vw;
+
+//   @include vp-1023 {
+//     width: 100%;
+//     height: 44.9vw;
+//   }
+
+//   @include vp-767 {
+//     height: 97.9vw;
+//     object-fit: cover;
+//     object-position: -135px 0;
+//   }
+// }
