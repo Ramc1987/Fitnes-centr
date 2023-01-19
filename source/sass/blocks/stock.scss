@@ -136,6 +136,7 @@ a {
 
 .stock__unlimited-img {
   height: 100%;
+  min-height: 462px;
   object-fit: cover;
 
   @include vp-1023 {

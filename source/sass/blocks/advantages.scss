@@ -63,11 +63,11 @@
   max-width: 340px;
 
   @include vp-767 {
-    margin-bottom: 50px;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 0 46px;
+    margin: 0 auto 50px;
   }
 
   &--space {
