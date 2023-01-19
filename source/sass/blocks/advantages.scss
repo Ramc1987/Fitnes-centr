@@ -4,7 +4,7 @@
 
 .advantages__container {
   padding-top: 146px;
-  padding-bottom: 91px;
+  padding-bottom: 86px;
 
   @include vp-1023 {
     padding-top: 100px;
@@ -41,7 +41,7 @@
 .advantages__list {
   display: grid;
   grid-template-columns: 1fr 240px 1fr;
-  column-gap: 60px;
+  column-gap: 61px;
   max-width: 1040px;
   width: 90%;
   margin: 0 auto;
@@ -61,20 +61,10 @@
   display: grid;
   grid-template-columns: auto 1fr;
   max-width: fit-content;
-  min-width: 340px;
   padding-left: 19px;
 
-  @include vp-767 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 0 46px;
-    margin: 0 auto 50px;
-  }
-
   &--space {
-    padding-bottom: 84px;
+    padding-bottom: 32px;
     border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 
     @include vp-1023 {
@@ -84,7 +74,7 @@
   }
 
   &--comfort {
-    padding-top: 84px;
+    padding-top: 76px;
 
     @include vp-1023 {
       grid-row: 3/4;
@@ -93,7 +83,9 @@
   }
 
   &--parking {
-    padding-bottom: 84px;
+    margin-top: -6px;
+    padding-bottom: 78px;
+    padding-left: 0;
     border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 
     @include vp-1023 {
@@ -103,7 +95,8 @@
   }
 
   &--trainer {
-    padding-top: 84px;
+    padding-top: 76px;
+    padding-left: 0;
 
     @include vp-1023 {
       grid-row: 3/4;
@@ -113,10 +106,11 @@
 
   &--gym {
     background-color: #1c3374;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-column: 2/3;
     grid-row: 1/4;
-    padding: 17px 34px;
+    padding: 47px 34px;
     text-align: center;
 
     @include vp-1023 {
@@ -133,6 +127,15 @@
       padding-bottom: 50px;
     }
   }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 46px;
+    margin: 0 auto 50px;
+  }
 }
 
 .advantages__count,
@@ -142,7 +145,7 @@
 }
 
 .advantages__count {
-  @include font(71px, 80%, 700);
+  @include font(71px, 83%, 700);
   background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -150,6 +153,32 @@
   display: block;
   margin-right: 30px;
   width: fill-available;
+
+  &--space {
+    margin-right: 31px;
+    margin-top: -4px;
+  }
+
+  &--trainer {
+    margin-right: 32px;
+  }
+
+  &--gym {
+    @include font(74px, 119%, 700);
+    -webkit-text-fill-color: $second-color;
+
+    margin: 0;
+    margin-bottom: -5px;
+
+    @include vp-1023 {
+      margin-bottom: 20px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 15px;
+      -webkit-text-fill-color: $second-color;
+    }
+  }
 
   @include vp-1023 {
     @include font(58px, 80%, 700);
@@ -161,22 +190,15 @@
     background-clip: text;
     margin-right: 0;
   }
+}
 
-  &--gym {
-    @include font(74px, 150%, 700);
-    -webkit-text-fill-color: $second-color;
+.advantages__content {
+  &--space {
+    margin-top: -7px;
+  }
 
-    margin: 0;
-    margin-bottom: 25px;
-
-    @include vp-1023 {
-      margin-bottom: 20px;
-    }
-
-    @include vp-767 {
-      margin-bottom: 15px;
-      -webkit-text-fill-color: $second-color;
-    }
+  &--parking {
+    padding-right: 5px;
   }
 }
 
@@ -191,18 +213,30 @@
   @include font(22px, 150%, 700);
 
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 3px;
 
-  @include vp-1023 {
-    @include font(20px, 150%, 700);
+  &--parking {
+    margin-bottom: 3px;
+  }
 
-    margin-bottom: 15px;
+  &--space {
+    margin-bottom: 4px;
+  }
+
+  &--trainer {
+    margin-top: -4px;
+    margin-bottom: 6px;
+  }
+
+  &--comfort {
+    margin-top: -3px;
+    margin-bottom: 6px;
   }
 
   &--gym {
     @include font(26px, 150%, 700);
     color: $second-color;
-    margin-bottom: 50px;
+    margin-bottom: 31px;
 
     @include vp-1023 {
       @include font(22px, 150%, 700);
@@ -214,17 +248,18 @@
       margin-bottom: 25px;
     }
   }
+
+  @include vp-1023 {
+    @include font(20px, 150%, 700);
+
+    margin-bottom: 15px;
+  }
 }
 
 .advantages__description {
   @include font(16px, 140%, 300);
 
   margin: 0;
-
-  @include vp-767 {
-    width: 100%;
-    margin: 0 auto;
-  }
 
   &--gym {
     @include font(16px, 150%, 400);
@@ -239,5 +274,10 @@
     @include vp-767 {
       width: 94.5%;
     }
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin: 0 auto;
   }
 }

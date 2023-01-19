@@ -15,8 +15,10 @@
 }
 
 .contacts__container {
-  padding-top: 56px;
-  padding-bottom: 70px;
+  padding-top: 57px;
+  padding-bottom: 19px;
+  padding-left: 120px;
+  padding-right: 0;
 
   @include vp-1023 {
     padding-top: 70px;
@@ -36,7 +38,7 @@
   letter-spacing: 0.03em;
 
   margin: 0;
-  margin-bottom: 43px;
+  margin-bottom: 37px;
 
   @include vp-1023 {
     @include font(42px, 50px, 600);
@@ -49,10 +51,10 @@
 
 .contacts__list-wrapper {
   display: grid;
-  grid-template-columns: 1fr 170px;
-  row-gap: 30px;
+  grid-template-columns: 1fr 168px;
 
   max-width: 400px;
+  margin-left: 3px;
 
   @include vp-1023 {
     grid-template-columns: 1fr 190px;
@@ -71,7 +73,7 @@
 .contacts__company-info,
 .contacts__schedule-company {
   display: grid;
-  row-gap: 30px;
+  row-gap: 17px;
 }
 
 .contacts__schedule-company {
@@ -110,7 +112,7 @@
   font-family: "Roboto Condensed", "Arial", sans-serif;
 
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 3px;
 
   @include vp-1023 {
     @include font(20px, 150%, 700);
@@ -122,6 +124,8 @@
 .contacts__item address,
 p,
 .contacts__item-link {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+
   @include font(14px, 21px, 400);
   font-style: normal;
 

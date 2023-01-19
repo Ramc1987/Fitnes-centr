@@ -40,7 +40,7 @@
 
   width: 410px;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 19px;
 
   @include vp-1023 {
     @include font(42px, 50px, 700);
@@ -54,7 +54,7 @@
 }
 
 .free-lesson__form {
-  width: 82.17%;
+  width: 70.6%;
 
   @include vp-1023 {
     width: 79.73%;
@@ -85,8 +85,9 @@
 
 .free-lesson__form-input input {
   margin-bottom: 30px;
-  padding: 0;
+  padding: 0 0 5px 0;
   width: 100%;
+  color: $second-color;
 
   border: none;
   border-bottom: 1px solid #74819c;
@@ -113,7 +114,7 @@
   border: none;
   outline: 3px solid $second-color;
   background-color: transparent;
-  padding: 21px 0;
+  padding: 18px 0 17px 0;
 
   @include font(14px, 16px, 700);
   font-family: "Roboto Condensed", "Arial", sans-serif;
