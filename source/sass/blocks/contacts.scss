@@ -1,5 +1,17 @@
 .contacts {
+  position: relative;
   background-color: $second-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -99vw;
+    width: 100vw;
+    height: 0;
+    background-color: $second-color;
+    z-index: -1;
+  }
 }
 
 .contacts__container {

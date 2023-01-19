@@ -1684,7 +1684,7 @@ button,
 
 .intro__img img {
   margin-top: -23px;
-  height: 40.7vw;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: -1px -59px;
@@ -2822,7 +2822,7 @@ blockquote {
   border-radius: 50px;
 }
 
-.form-contact {
+.form-contact__container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -2830,12 +2830,24 @@ blockquote {
 }
 
 .free-lesson {
+  position: relative;
   background-color: #102654;
+}
+
+.free-lesson::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -99vw;
+  width: 100vw;
+  height: 100%;
+  background-color: #102654;
+  z-index: -1;
 }
 
 .free-lesson__container {
   padding-top: 56px;
-  padding-left: 103px;
+  padding-left: 0;
   padding-right: 0;
   padding-bottom: 70px;
 }
@@ -2946,7 +2958,19 @@ blockquote {
 }
 
 .contacts {
+  position: relative;
   background-color: #ffffff;
+}
+
+.contacts::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -99vw;
+  width: 100vw;
+  height: 0;
+  background-color: #ffffff;
+  z-index: -1;
 }
 
 .contacts__container {
@@ -3040,6 +3064,8 @@ p,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -3622,7 +3648,7 @@ p,
     padding: 62px 65px 62px 65px;
   }
 
-  .form-contact {
+  .form-contact__container {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
