@@ -94,6 +94,7 @@
 }
 
 .tabs__button {
+  max-width: 96px;
   border: none;
   padding: 0;
   background-color: transparent;
@@ -244,7 +245,7 @@ a,
   position: relative;
   z-index: 1;
   margin-bottom: 33px;
-  width: 167px;
+  width: max-content;
 
   @include font(60px, 150%, 700);
   color: #103aae;
@@ -273,7 +274,7 @@ a,
     width: 30px;
     height: 42px;
     top: 24px;
-    right: 0;
+    right: -34px;
     background-image: url("../img/svg/rouble.svg");
     background-repeat: no-repeat;
 

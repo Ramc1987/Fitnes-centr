@@ -59,6 +59,8 @@
 
 .advantages__item {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 340px;
 
   @include vp-767 {
     margin-bottom: 50px;
@@ -144,6 +146,7 @@
 
   display: block;
   margin-right: 30px;
+  width: fill-available;
 
   @include vp-1023 {
     @include font(58px, 80%, 700);

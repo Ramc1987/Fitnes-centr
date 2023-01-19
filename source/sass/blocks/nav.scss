@@ -1,15 +1,22 @@
 .nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+.nav__user-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .nav__link-tel {
   @include font(26px, 31px, 600);
-
   letter-spacing: 0.03em;
   color: $second-color;
-  margin-top: -10px;
+
+  margin-bottom: 10px;
+  margin-left: 25px;
+  z-index: 1;
 
   @include vp-1023 {
     @include font(24px, 29px, 700);

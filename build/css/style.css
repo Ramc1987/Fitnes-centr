@@ -1535,12 +1535,14 @@ button,
 
 .header__container {
   padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 .logo {
   display: inline-block;
   vertical-align: baseline;
   cursor: default;
+  margin-right: auto;
 }
 
 .logo:focus-within {
@@ -1556,12 +1558,20 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.nav__user-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .nav__link-tel {
@@ -1570,7 +1580,9 @@ button,
   font-weight: 600;
   letter-spacing: 0.03em;
   color: #ffffff;
-  margin-top: -10px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  z-index: 1;
 }
 
 .nav__link-tel.focus-visible:focus {
@@ -1869,6 +1881,7 @@ button,
 }
 
 .tabs__button {
+  max-width: 96px;
   border: none;
   padding: 0;
   background-color: transparent;
@@ -2005,7 +2018,9 @@ a,
   position: relative;
   z-index: 1;
   margin-bottom: 33px;
-  width: 167px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   font-size: 60px;
   line-height: 150%;
   font-weight: 700;
@@ -2035,7 +2050,7 @@ a,
   width: 30px;
   height: 42px;
   top: 24px;
-  right: 0;
+  right: -34px;
   background-image: url("../img/svg/rouble.svg");
   background-repeat: no-repeat;
 }
@@ -2199,6 +2214,7 @@ a,
   line-height: 65px;
   font-weight: 600;
   letter-spacing: 0.03em;
+  width: 40%;
   margin: 0;
 }
 
@@ -2409,6 +2425,9 @@ a,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 340px;
 }
 
 .advantages__item--space {
@@ -2460,6 +2479,9 @@ a,
   background-clip: text;
   display: block;
   margin-right: 30px;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
 }
 
 .advantages__count--gym {
@@ -3023,6 +3045,10 @@ p,
   align-items: center;
   margin-right: 40px;
   width: 796px;
+}
+
+.footer__nav-item {
+  margin-right: 40px;
 }
 
 .footer__nav-item:first-child {
@@ -3675,6 +3701,8 @@ p,
 
   .footer__nav-list {
     width: 78.91%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   .footer__nav-item:not(:last-child, :first-child) {
