@@ -10,6 +10,10 @@
     height: 39vw;
   }
 
+  @include vp-1023 {
+    height: 38vw;
+  }
+
   @include vp-767 {
     min-height: 274px;
     height: 72vw;
@@ -54,6 +58,10 @@
     height: 39vw;
   }
 
+  @include vp-1023 {
+    height: 38vw;
+  }
+
   @include vp-767 {
     height: 72vw;
   }
@@ -75,6 +83,10 @@
 
 .card-trainer__content {
   padding: 52px 24px 0 56px;
+
+  @include vp-1023 {
+    padding: 0 9px 0 0;
+  }
 }
 
 .card-trainer__content h3,
@@ -106,11 +118,19 @@
   width: 84px;
   display: block;
   margin: 0 auto 33px;
+
+  @include vp-1023 {
+    text-align: center;
+  }
 }
 
 .card-trainer__list-description {
   @include vp-1201 {
     padding: 0 12px 0 47px;
+  }
+
+  @include vp-1023 {
+    padding: 0 12px 0 44px;
   }
 }
 

@@ -7,8 +7,8 @@
   padding-bottom: 86px;
 
   @include vp-1023 {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 92px;
+    padding-bottom: 94px;
   }
 
   @include vp-767 {
@@ -27,7 +27,7 @@
   @include vp-1023 {
     @include font(42px, 50px, 600);
 
-    margin: 0 auto 61px;
+    margin: 0 0 49px 128px;
   }
 
   @include vp-767 {
@@ -48,7 +48,7 @@
 
   @include vp-1023 {
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px 60px;
+    gap: 45px 29px;
     width: 100%;
   }
 
@@ -114,8 +114,9 @@
     text-align: center;
 
     @include vp-1023 {
+      max-width: 442px;
       width: 65.2%;
-      padding: 45px 34px;
+      padding: 26px 0 0 0;
       margin: 0 auto;
       grid-column: 1/3;
       grid-row: 2/3;
@@ -126,6 +127,10 @@
       padding-top: 50px;
       padding-bottom: 50px;
     }
+  }
+
+  @include vp-1023 {
+    padding-left: 0;
   }
 
   @include vp-767 {
@@ -157,6 +162,16 @@
   &--space {
     margin-right: 31px;
     margin-top: -4px;
+
+    @include vp-1023 {
+      margin-top: -2px;
+    }
+  }
+
+  &--parking {
+    @include vp-1023 {
+      margin-top: 4px;
+    }
   }
 
   &--trainer {
@@ -170,9 +185,7 @@
     margin: 0;
     margin-bottom: -5px;
 
-    @include vp-1023 {
-      margin-bottom: 20px;
-    }
+    margin-top: 0;
 
     @include vp-767 {
       margin-bottom: 15px;
@@ -182,6 +195,14 @@
 
   @include vp-1023 {
     @include font(58px, 80%, 700);
+
+    &--gym {
+      @include vp-1023 {
+        @include font(74px, 119%, 700);
+
+        margin-bottom: -7px;
+      }
+    }
   }
 
   @include vp-767 {
@@ -238,12 +259,6 @@
     color: $second-color;
     margin-bottom: 31px;
 
-    @include vp-1023 {
-      @include font(22px, 150%, 700);
-
-      margin-bottom: 30px;
-    }
-
     @include vp-767 {
       margin-bottom: 25px;
     }
@@ -252,7 +267,13 @@
   @include vp-1023 {
     @include font(20px, 150%, 700);
 
-    margin-bottom: 15px;
+    margin-bottom: 0;
+
+    &--gym {
+      @include font(22px, 150%, 700);
+
+      margin-bottom: 12px;
+    }
   }
 }
 
@@ -266,9 +287,9 @@
     color: $second-color;
 
     @include vp-1023 {
-      width: 51.5%;
+      width: 47.5%;
       margin: 0 auto;
-      margin-bottom: 28px;
+      margin-bottom: 38px;
     }
 
     @include vp-767 {

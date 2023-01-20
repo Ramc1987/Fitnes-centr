@@ -19,6 +19,12 @@
   margin: 0 auto;
   margin-bottom: 37px;
   padding-left: 8px;
+
+  @include vp-1023 {
+    @include font(42px, 50px, 600);
+    padding-left: 0;
+    margin-bottom: 41px;
+  }
 }
 
 .reviews__swiper {

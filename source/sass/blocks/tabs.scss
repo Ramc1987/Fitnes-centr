@@ -18,9 +18,9 @@
       content: "";
       position: absolute;
       right: -1px;
-      bottom: -25px;
+      bottom: -51px;
       width: 348px;
-      height: 345px;
+      height: 372px;
       background-image: url("../img/background/pancakes-for-barbell-tablet.png");
       background-repeat: no-repeat;
     }
@@ -38,7 +38,7 @@
   padding-bottom: 120px;
 
   @include vp-1023 {
-    padding: 101px 163px 100px 163px;
+    padding: 100px 163px 100px 163px;
   }
 
   @include vp-767 {
@@ -83,7 +83,7 @@
   @include vp-1023 {
     width: 332px;
     margin-bottom: 45px;
-    padding-bottom: 11px;
+    padding-bottom: 9px;
   }
 
   @include vp-767 {
@@ -123,6 +123,10 @@
       width: 100%;
       background-color: #d10a42;
 
+      @include vp-1023 {
+        bottom: -11px;
+      }
+
       @include vp-767 {
         bottom: -13px;
       }
@@ -150,6 +154,7 @@
 
   @include vp-1023 {
     grid-template-columns: 1fr;
+    gap: 38px;
   }
 }
 
@@ -242,7 +247,7 @@ a,
 .tabs__item-wrapper b {
   position: relative;
   z-index: 1;
-  width: 48%;
+  width: 39%;
   margin: 0 auto 33px;
 
   @include font(60px, 150%, 700);
@@ -286,7 +291,7 @@ a,
   }
 
   @include vp-1023 {
-    margin-bottom: 34px;
+    margin-bottom: 35px;
   }
 
   @include vp-767 {
@@ -308,7 +313,7 @@ a,
   padding: 27px 44px 22px 44px;
 
   @include vp-1023 {
-    padding: 25px 44px 22px 44px;
+    padding: 25px 44px 23px 44px;
   }
 
   @include hover-focus {

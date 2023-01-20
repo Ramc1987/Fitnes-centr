@@ -13,6 +13,11 @@
   @include vp-1201 {
     width: 88.29%;
   }
+
+  @include vp-1023 {
+    padding-top: 30px;
+    padding-bottom: 101px;
+  }
 }
 
 .trainer__swaper-slides {
@@ -29,6 +34,15 @@
 
   width: 40%;
   margin: 0;
+
+  @include vp-1023 {
+    @include font(42px, 52px, 600);
+    text-align: center;
+
+    margin: 0 auto;
+    padding-top: 31px;
+    padding-right: 6px;
+  }
 }
 
 .trainer__swiper-button {
@@ -53,6 +67,10 @@
     @include vp-1201 {
       left: 0;
     }
+
+    @include vp-1023 {
+      top: 44.3%;
+    }
   }
 
   &--next {
@@ -62,6 +80,10 @@
 
     @include vp-1201 {
       right: 0;
+    }
+
+    @include vp-1023 {
+      top: 44%;
     }
   }
 
