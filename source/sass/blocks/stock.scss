@@ -8,8 +8,8 @@
   }
 
   @include vp-767 {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 64px;
+    padding-bottom: 66px;
   }
 }
 
@@ -24,11 +24,14 @@
 
   @include vp-1023 {
     @include font(42px, 50px, 600);
+
     margin-bottom: 41px;
   }
 
   @include vp-767 {
     @include font(32px, 38px, 600);
+
+    margin-bottom: 42px;
   }
 }
 
@@ -93,7 +96,7 @@ a {
   margin-bottom: 20px;
 
   @include vp-767 {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 }
 
@@ -105,7 +108,7 @@ a {
   margin-bottom: auto;
 
   @include vp-767 {
-    margin-bottom: 40px;
+    margin-bottom: 31px;
   }
 }
 
@@ -142,6 +145,11 @@ a {
   @include vp-1023 {
     width: 100%;
   }
+
+  @include vp-767 {
+    min-height: 299px;
+    object-position: 0 -6px;
+  }
 }
 
 .stock__tarif-list {
@@ -170,6 +178,12 @@ a {
   }
 }
 
+.stock__wrapper-images {
+  @include vp-767 {
+    height: 93.44vw;
+  }
+}
+
 .stock__tarif-content {
   display: flex;
   flex-direction: column;
@@ -183,10 +197,15 @@ a {
     @include vp-1023 {
       padding-right: 56px;
     }
+
+    @include vp-767 {
+      padding-right: 28px;
+    }
   }
 
   @include vp-767 {
     text-align: center;
+    padding-top: 33px;
   }
 }
 
@@ -211,6 +230,10 @@ a {
 
   @include vp-1023 {
     margin-bottom: 48px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 30px;
   }
 }
 

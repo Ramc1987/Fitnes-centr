@@ -4,6 +4,10 @@
   width: 83.3%;
   margin: 0 auto;
   padding: 0;
+
+  @include vp-767 {
+    width: 77.6%;
+  }
 }
 
 .slider__list {
@@ -27,7 +31,7 @@
 
   @include vp-767 {
     column-gap: 15px;
-    padding: 40px 22px 40px 22px;
+    padding: 33px 22px;
   }
 }
 
@@ -47,7 +51,8 @@ blockquote {
 
   @include vp-767 {
     line-height: 130%;
-    margin-bottom: 0;
+    margin-bottom: 6px;
+    align-self: center;
   }
 }
 
@@ -73,6 +78,7 @@ blockquote {
     grid-column: 1/2;
     grid-row: auto;
     margin-bottom: 15px;
+    margin-left: 18px;
   }
 }
 

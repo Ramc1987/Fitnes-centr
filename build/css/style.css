@@ -2017,7 +2017,7 @@ a,
 .tabs__item-wrapper b {
   position: relative;
   z-index: 1;
-  width: 39%;
+  width: 48%;
   margin: 0 auto 33px;
   font-size: 60px;
   line-height: 150%;
@@ -2274,11 +2274,12 @@ a,
   overflow: hidden;
 }
 
-.card-trainer:focus-within {
-  border: 1px solid #ffffff;
+.card-trainer:hover .card-trainer__content-wrapper {
+  z-index: 1;
+  background-color: rgba(16, 38, 84, 0.89);
 }
 
-.card-trainer:hover .card-trainer__content-wrapper {
+.card-trainer:focus-within .card-trainer__content-wrapper {
   z-index: 1;
   background-color: rgba(16, 38, 84, 0.89);
 }
@@ -2951,6 +2952,7 @@ blockquote {
   padding: 0 0 5px 0;
   width: 100%;
   color: #ffffff;
+  outline: none;
   border: none;
   border-bottom: 1px solid #74819c;
   background: transparent;
@@ -2997,8 +2999,7 @@ blockquote {
 }
 
 .free-lesson__form-input input.focus-visible:focus {
-  outline: 1px solid #009dff;
-  outline-offset: 4px;
+  border-bottom: 1px solid #009dff;
 }
 
 .free-lesson__form-button-submit {
@@ -3007,6 +3008,10 @@ blockquote {
   outline: 3px solid #ffffff;
   background-color: transparent;
   padding: 18px 0 17px 0;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
@@ -3518,6 +3523,7 @@ p,
   }
 
   .tabs__item-wrapper b {
+    width: 39%;
     margin-bottom: 35px;
   }
 
@@ -3620,12 +3626,17 @@ p,
     height: 38vw;
   }
 
+  .card-trainer:active .card-trainer__content-wrapper {
+    z-index: 1;
+    background-color: rgba(16, 38, 84, 0.89);
+  }
+
   .card-trainer__images img {
     height: 38vw;
   }
 
   .card-trainer__content {
-    padding: 0 9px 0 0;
+    padding: 0;
   }
 
   .card-trainer__content span {
@@ -3899,10 +3910,11 @@ p,
 
   .header__wrapper {
     min-height: 491px;
+    padding-bottom: 48px;
   }
 
   .header__container {
-    padding-top: 15px;
+    padding-top: 6px;
   }
 
   .logo__icon {
@@ -3950,7 +3962,7 @@ p,
     line-height: 86px;
     font-weight: 800;
     letter-spacing: 0.02em;
-    margin: 13px 0 0 0;
+    margin: 9px 0 0 0;
   }
 
   .intro__button {
@@ -3964,7 +3976,7 @@ p,
   }
 
   .promo-gym__container {
-    padding: 64px 0 71px 0;
+    padding: 64px 0 30px 0;
   }
 
   .promo-gym__description {
@@ -3989,8 +4001,13 @@ p,
   }
 
   .promo-gym__content p {
-    margin: 0 0 32px 0;
+    margin: 0 0 33px 0;
     width: 93%;
+  }
+
+  .promo-gym__gallery-image {
+    height: 97.8vw;
+    margin-bottom: 40px;
   }
 
   .video {
@@ -4009,7 +4026,7 @@ p,
 
   .tabs__container {
     padding-top: 64px;
-    padding-bottom: 70px;
+    padding-bottom: 75px;
   }
 
   .tabs__container h2 {
@@ -4023,10 +4040,11 @@ p,
     width: 100%;
     max-width: 290px;
     margin-bottom: 35px;
+    padding-bottom: 12px;
   }
 
   .tabs__button--active::before {
-    bottom: -13px;
+    bottom: -14px;
   }
 
   .tabs__button {
@@ -4036,7 +4054,7 @@ p,
   }
 
   .tabs__item-wrapper {
-    padding-top: 43px;
+    padding-top: 44px;
     padding-bottom: 43px;
   }
 
@@ -4073,18 +4091,49 @@ p,
     margin-bottom: 30px;
   }
 
+  .tabs__item-wrapper a {
+    padding: 24px 44px 23px 44px;
+  }
+
   .games__container {
-    padding-top: 74px;
+    padding-top: 69px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 
   .games__content {
-    padding: 44px 45px 51px 44px;
+    padding: 44px 45px 53px 44px;
   }
 
   .games__images img {
     min-height: 294px;
+  }
+
+  .trainer__swiper {
+    padding-top: 42px;
+    padding-bottom: 70px;
+    width: 84.29%;
+  }
+
+  .trainer__container h2 {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 600;
+    padding-top: 62px;
+  }
+
+  .trainer__swiper-button {
+    width: 11px;
+  }
+
+  .trainer__swiper-button--prev {
+    top: 48.5%;
+    left: -11px;
+  }
+
+  .trainer__swiper-button--next {
+    top: 48.5%;
+    right: -10px;
   }
 
   .card-trainer {
@@ -4094,28 +4143,33 @@ p,
 
   .card-trainer__images img {
     height: 72vw;
+    -o-object-position: 0 -24px;
+    object-position: 0 -24px;
+  }
+
+  .card-trainer__content-wrapper {
+    padding: 46px 12px 0 12px;
+  }
+
+  .card-trainer__list-description {
+    padding: 0 12px 0 22px;
   }
 
   .advantages__container {
-    padding: 70px 0 20px 0;
+    padding: 65px 0 27px 0;
   }
 
   .advantages__container h2 {
     font-size: 32px;
     line-height: 38px;
     font-weight: 600;
-    margin: 0 auto 60px;
+    text-align: start;
+    margin: 0 auto 51px;
     width: 245px;
   }
 
   .advantages__list {
     display: block;
-  }
-
-  .advantages__item--gym {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
   }
 
   .advantages__item {
@@ -4131,11 +4185,34 @@ p,
     align-items: center;
     text-align: center;
     padding: 0 46px;
-    margin: 0 auto 50px;
+    margin: 0 auto 38px;
+  }
+
+  .advantages__item--parking {
+    margin-bottom: 44px;
+  }
+
+  .advantages__item--gym {
+    width: 100%;
+    padding-bottom: 35px;
+    margin-bottom: 46px;
+  }
+
+  .advantages__item--comfort {
+    margin-bottom: 42px;
+  }
+
+  .advantages__count--space {
+    margin-bottom: 15px;
+  }
+
+  .advantages__count--parking {
+    margin-bottom: 8px;
   }
 
   .advantages__count--gym {
-    margin-bottom: 15px;
+    margin-top: 31px;
+    margin-bottom: -12px;
     -webkit-text-fill-color: #ffffff;
   }
 
@@ -4148,12 +4225,20 @@ p,
     margin-right: 0;
   }
 
-  .advantages__content-title--gym {
-    margin-bottom: 25px;
+  .advantages__content--parking {
+    padding-right: 0;
   }
 
-  .advantages__description--gym {
-    width: 94.5%;
+  .advantages__content-title--gym {
+    margin-bottom: 7px;
+  }
+
+  .advantages__content-title--comfort {
+    margin-top: 8px;
+  }
+
+  .advantages__content-title--trainer {
+    margin-top: 8px;
   }
 
   .advantages__description {
@@ -4162,14 +4247,15 @@ p,
   }
 
   .stock__container {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 64px;
+    padding-bottom: 66px;
   }
 
   .stock__container h2 {
     font-size: 32px;
     line-height: 38px;
     font-weight: 600;
+    margin-bottom: 42px;
   }
 
   .stock__unlimited-wrapper {
@@ -4182,15 +4268,21 @@ p,
   }
 
   .stock__unlimited-list dd {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   .stock__unlimited-content p {
-    margin-bottom: 40px;
+    margin-bottom: 31px;
   }
 
   .stock__unlimited-content a {
     margin: 0 auto;
+  }
+
+  .stock__unlimited-img {
+    min-height: 299px;
+    -o-object-position: 0 -6px;
+    object-position: 0 -6px;
   }
 
   .stock__tarif-list {
@@ -4205,8 +4297,21 @@ p,
     justify-content: center;
   }
 
+  .stock__wrapper-images {
+    height: 93.44vw;
+  }
+
+  .stock__tarif-content--month-free {
+    padding-right: 28px;
+  }
+
   .stock__tarif-content {
     text-align: center;
+    padding-top: 33px;
+  }
+
+  .stock__tarif-content p {
+    margin-bottom: 30px;
   }
 
   .stock__tarif-content a {
@@ -4214,19 +4319,36 @@ p,
   }
 
   .reviews__container {
-    padding-bottom: 70px;
+    padding-bottom: 71px;
+  }
+
+  .reviews__container h2 {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 600;
+  }
+
+  .reviews__swiper-button {
+    width: 11px;
+  }
+
+  .slider {
+    width: 77.6%;
   }
 
   .slider__card {
     -webkit-column-gap: 15px;
     -moz-column-gap: 15px;
     column-gap: 15px;
-    padding: 40px 22px 40px 22px;
+    padding: 33px 22px;
   }
 
   .slider__card cite {
     line-height: 130%;
-    margin-bottom: 0;
+    margin-bottom: 6px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
 
   .slider__card blockquote {
@@ -4242,6 +4364,7 @@ p,
     grid-column: 1/2;
     grid-row: auto;
     margin-bottom: 15px;
+    margin-left: 18px;
   }
 
   .slider__image img {
@@ -4254,7 +4377,7 @@ p,
   }
 
   .free-lesson__container {
-    padding-top: 70px;
+    padding-top: 64px;
     padding-bottom: 70px;
   }
 
@@ -4263,6 +4386,7 @@ p,
     line-height: 38px;
     font-weight: 600;
     width: 100%;
+    margin-bottom: 35px;
   }
 
   .free-lesson__form {
@@ -4274,27 +4398,33 @@ p,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    margin-bottom: 8px;
   }
 
   .free-lesson__form-input {
     width: 100%;
   }
 
+  .free-lesson__form-input input {
+    margin-bottom: 33px;
+  }
+
   .contacts__container {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 64px;
+    padding-bottom: 62px;
   }
 
   .contacts__container h2 {
     font-size: 32px;
     line-height: 38px;
     font-weight: 600;
+    margin-bottom: 34px;
   }
 
   .contacts__list-wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    row-gap: 30px;
+    row-gap: 21px;
   }
 
   .contacts__schedule-company {
@@ -4326,7 +4456,7 @@ p,
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
     margin-right: 0;
-    margin-bottom: 40px;
+    margin-bottom: 18px;
     -webkit-box-align: baseline;
     -ms-flex-align: baseline;
     align-items: baseline;
@@ -4343,15 +4473,28 @@ p,
   }
 
   .footer__nav-item {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
   }
 
   .footer__nav-item:first-child {
-    margin-bottom: 28px;
+    margin-bottom: 15px;
   }
 
   .footer__nav-item:not(:last-child, :first-child) {
-    margin-right: 71px;
+    margin-right: 76px;
+  }
+
+  .footer__nav-link {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 767px) and (max-width: 767px) {
+  .advantages__description--gym {
+    width: 90%;
+    margin-bottom: 10px;
   }
 }
 

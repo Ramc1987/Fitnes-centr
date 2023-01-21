@@ -12,7 +12,7 @@
   }
 
   @include vp-767 {
-    padding: 70px 0 20px 0;
+    padding: 65px 0 27px 0;
   }
 }
 
@@ -32,8 +32,9 @@
 
   @include vp-767 {
     @include font(32px, 38px, 600);
+    text-align: start;
 
-    margin: 0 auto 60px;
+    margin: 0 auto 51px;
     width: 245px;
   }
 }
@@ -121,12 +122,6 @@
       grid-column: 1/3;
       grid-row: 2/3;
     }
-
-    @include vp-767 {
-      width: 100%;
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
   }
 
   @include vp-1023 {
@@ -139,7 +134,21 @@
     align-items: center;
     text-align: center;
     padding: 0 46px;
-    margin: 0 auto 50px;
+    margin: 0 auto 38px;
+
+    &--parking {
+      margin-bottom: 44px;
+    }
+
+    &--gym {
+      width: 100%;
+      padding-bottom: 35px;
+      margin-bottom: 46px;
+    }
+
+    &--comfort {
+      margin-bottom: 42px;
+    }
   }
 }
 
@@ -166,11 +175,19 @@
     @include vp-1023 {
       margin-top: -2px;
     }
+
+    @include vp-767 {
+      margin-bottom: 15px;
+    }
   }
 
   &--parking {
     @include vp-1023 {
       margin-top: 4px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 8px;
     }
   }
 
@@ -188,7 +205,8 @@
     margin-top: 0;
 
     @include vp-767 {
-      margin-bottom: 15px;
+      margin-top: 31px;
+      margin-bottom: -12px;
       -webkit-text-fill-color: $second-color;
     }
   }
@@ -220,6 +238,10 @@
 
   &--parking {
     padding-right: 5px;
+
+    @include vp-767 {
+      padding-right: 0;
+    }
   }
 }
 
@@ -260,7 +282,7 @@
     margin-bottom: 31px;
 
     @include vp-767 {
-      margin-bottom: 25px;
+      margin-bottom: 7px;
     }
   }
 
@@ -273,6 +295,16 @@
       @include font(22px, 150%, 700);
 
       margin-bottom: 12px;
+    }
+  }
+
+  @include vp-767 {
+    &--comfort {
+      margin-top: 8px;
+    }
+
+    &--trainer {
+      margin-top: 8px;
     }
   }
 }
@@ -291,14 +323,17 @@
       margin: 0 auto;
       margin-bottom: 38px;
     }
-
-    @include vp-767 {
-      width: 94.5%;
-    }
   }
 
   @include vp-767 {
     width: 100%;
     margin: 0 auto;
+
+    @include vp-767 {
+      &--gym {
+        width: 90%;
+        margin-bottom: 10px;
+      }
+    }
   }
 }

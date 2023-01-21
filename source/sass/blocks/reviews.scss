@@ -6,7 +6,7 @@
   }
 
   @include vp-767 {
-    padding-bottom: 70px;
+    padding-bottom: 71px;
   }
 }
 
@@ -24,6 +24,10 @@
     @include font(42px, 50px, 600);
     padding-left: 0;
     margin-bottom: 41px;
+  }
+
+  @include vp-767 {
+    @include font(32px, 38px, 600);
   }
 }
 
@@ -66,5 +70,9 @@
   &:focus-visible {
     outline-offset: 2px;
     outline: 1px solid $focus-color;
+  }
+
+  @include vp-767 {
+    width: 11px;
   }
 }

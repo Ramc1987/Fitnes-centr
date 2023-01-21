@@ -43,7 +43,7 @@
 
   @include vp-767 {
     padding-top: 64px;
-    padding-bottom: 70px;
+    padding-bottom: 75px;
   }
 }
 
@@ -90,6 +90,7 @@
     width: 100%;
     max-width: 290px;
     margin-bottom: 35px;
+    padding-bottom: 12px;
   }
 }
 
@@ -128,7 +129,7 @@
       }
 
       @include vp-767 {
-        bottom: -13px;
+        bottom: -14px;
       }
     }
   }
@@ -205,7 +206,7 @@
   }
 
   @include vp-767 {
-    padding-top: 43px;
+    padding-top: 44px;
     padding-bottom: 43px;
   }
 }
@@ -247,7 +248,7 @@ a,
 .tabs__item-wrapper b {
   position: relative;
   z-index: 1;
-  width: 39%;
+  width: 48%;
   margin: 0 auto 33px;
 
   @include font(60px, 150%, 700);
@@ -291,6 +292,7 @@ a,
   }
 
   @include vp-1023 {
+    width: 39%;
     margin-bottom: 35px;
   }
 
@@ -314,6 +316,10 @@ a,
 
   @include vp-1023 {
     padding: 25px 44px 23px 44px;
+  }
+
+  @include vp-767 {
+    padding: 24px 44px 23px 44px;
   }
 
   @include hover-focus {

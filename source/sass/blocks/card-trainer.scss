@@ -6,12 +6,22 @@
   margin-right: 40px;
   overflow: hidden;
 
+  &:hover .card-trainer__content-wrapper {
+    z-index: 1;
+    background-color: rgba(16, 38, 84, 0.89);
+  }
+
   @include vp-1201 {
     height: 39vw;
   }
 
   @include vp-1023 {
     height: 38vw;
+
+    &:active .card-trainer__content-wrapper {
+      z-index: 1;
+      background-color: rgba(16, 38, 84, 0.89);
+    }
   }
 
   @include vp-767 {
@@ -19,14 +29,10 @@
     height: 72vw;
   }
 
-  &:focus-within {
-    border: 1px solid $second-color;
+  &:focus-within .card-trainer__content-wrapper {
+    z-index: 1;
+    background-color: rgba(16, 38, 84, 0.89);
   }
-}
-
-.card-trainer:hover .card-trainer__content-wrapper {
-  z-index: 1;
-  background-color: rgba(16, 38, 84, 0.89);
 }
 
 .card-trainer__front {
@@ -64,6 +70,7 @@
 
   @include vp-767 {
     height: 72vw;
+    object-position: 0 -24px;
   }
 }
 
@@ -79,13 +86,17 @@
   @include vp-1201 {
     padding: 56px 12px 0 12px;
   }
+
+  @include vp-767 {
+    padding: 46px 12px 0 12px;
+  }
 }
 
 .card-trainer__content {
   padding: 52px 24px 0 56px;
 
   @include vp-1023 {
-    padding: 0 9px 0 0;
+    padding: 0;
   }
 }
 
@@ -131,6 +142,10 @@
 
   @include vp-1023 {
     padding: 0 12px 0 44px;
+  }
+
+  @include vp-767 {
+    padding: 0 12px 0 22px;
   }
 }
 

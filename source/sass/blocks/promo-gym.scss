@@ -8,7 +8,7 @@
   }
 
   @include vp-767 {
-    padding: 64px 0 71px 0;
+    padding: 64px 0 30px 0;
   }
 }
 
@@ -95,7 +95,7 @@
   }
 
   @include vp-767 {
-    margin: 0 0 32px 0;
+    margin: 0 0 33px 0;
     width: 93%;
   }
 }
@@ -120,20 +120,9 @@
     width: 100%;
     height: 44.8vw;
   }
+
+  @include vp-767 {
+    height: 97.8vw;
+    margin-bottom: 40px;
+  }
 }
-
-// .promo-gym__image img {
-//   width: 100%;
-//   height: 29.3vw;
-
-//   @include vp-1023 {
-//     width: 100%;
-//     height: 44.9vw;
-//   }
-
-//   @include vp-767 {
-//     height: 97.9vw;
-//     object-fit: cover;
-//     object-position: -135px 0;
-//   }
-// }

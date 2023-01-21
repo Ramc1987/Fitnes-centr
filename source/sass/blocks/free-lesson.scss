@@ -28,7 +28,7 @@
   }
 
   @include vp-767 {
-    padding-top: 70px;
+    padding-top: 64px;
     padding-bottom: 70px;
   }
 }
@@ -51,6 +51,7 @@
     @include font(32px, 38px, 600);
 
     width: 100%;
+    margin-bottom: 35px;
   }
 }
 
@@ -73,6 +74,7 @@
 
   @include vp-767 {
     flex-direction: column;
+    margin-bottom: 8px;
   }
 }
 
@@ -94,6 +96,7 @@
   width: 100%;
   color: $second-color;
 
+  outline: none;
   border: none;
   border-bottom: 1px solid #74819c;
   background: transparent;
@@ -109,8 +112,11 @@
   }
 
   @include focus {
-    outline: 1px solid $focus-color;
-    outline-offset: 4px;
+    border-bottom: 1px solid $focus-color;
+  }
+
+  @include vp-767 {
+    margin-bottom: 33px;
   }
 }
 
@@ -120,6 +126,8 @@
   outline: 3px solid $second-color;
   background-color: transparent;
   padding: 18px 0 17px 0;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 
   @include font(14px, 16px, 700);
   font-family: "Roboto Condensed", "Arial", sans-serif;
