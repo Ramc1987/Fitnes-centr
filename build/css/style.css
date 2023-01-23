@@ -2072,7 +2072,7 @@ a,
   color: #ffffff;
   background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
 }
 
 .games__container {
@@ -2112,7 +2112,7 @@ a,
   vertical-align: middle;
 }
 
-.games__title {
+.games__date-item span {
   font-size: 18px;
   line-height: 150%;
   font-weight: 400;
@@ -2155,6 +2155,7 @@ a,
   font-weight: 400;
   width: 37px;
   margin-left: 9px;
+  margin-bottom: 0;
 }
 
 .games__content p {
@@ -3550,7 +3551,7 @@ p,
     padding-top: 7px;
   }
 
-  .games__title {
+  .games__date-item span {
     font-size: 12px;
     line-height: 150%;
     font-weight: 400;
@@ -4527,7 +4528,7 @@ p,
     color: #ffffff;
     background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
     background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-    border: 1px solid #ffffff;
+    border: 2px solid #ffffff;
   }
 
   .games__content a:hover:not(.focus-visible) {

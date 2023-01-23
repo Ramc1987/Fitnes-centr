@@ -6,13 +6,12 @@ const activatesTabs = () => {
     tabs.forEach((tab) => {
       tab.addEventListener('click', () => {
         const target = document.querySelector(tab.dataset.target);
-
-        tabsContent.forEach((item) => {
-          item.classList.remove('tabs__list--active');
-        });
-
-        target.classList.add('tabs__list--active');
-
+        if (tabsContent) {
+          tabsContent.forEach((item) => {
+            item.classList.remove('tabs__list--active');
+            target.classList.add('tabs__list--active');
+          });
+        }
         tabs.forEach((tabitem) => {
           tabitem.classList.remove('tabs__button--active');
         });
