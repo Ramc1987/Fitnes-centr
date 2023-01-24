@@ -162,15 +162,8 @@
 }
 
 .intro__img img {
-  height: 556px;
+  height: 100%;
   object-fit: cover;
-  object-position: -1px -59px;
-
-  @include vp-1023 {
-    width: 100%;
-    height: 100%;
-    object-position: -1px -16px;
-  }
 
   @include vp-767 {
     display: none;

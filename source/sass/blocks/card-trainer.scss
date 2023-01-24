@@ -70,7 +70,7 @@
 
   @include vp-767 {
     height: 72vw;
-    object-position: 0 -24px;
+    min-height: 274px;
   }
 }
 
@@ -174,9 +174,4 @@
   &:not(:last-child) {
     margin-bottom: 13px;
   }
-}
-
-.card-trainer__images-matrix {
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-  object-position: 0 0;
 }

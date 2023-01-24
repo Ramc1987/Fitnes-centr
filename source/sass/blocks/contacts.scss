@@ -132,6 +132,10 @@ p,
   font-style: normal;
 
   @include vp-1023 {
-    @include font(18px, 152%, 700);
+    @include font(18px, 152%, 400);
+  }
+
+  @include vp-767 {
+    @include font(14px, 152%, 400);
   }
 }
