@@ -35,6 +35,15 @@
   }
 }
 
+.slider__content {
+  display: flex;
+  flex-direction: column;
+
+  @include vp-767 {
+    display: contents;
+  }
+}
+
 .slider__card cite,
 blockquote {
   font-family: "Roboto Condensed", "Arial", sans-serif;

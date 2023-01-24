@@ -77,20 +77,17 @@
   width: 341px;
   margin: 0 auto;
   margin-bottom: 39px;
-  padding-bottom: 10px;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 
   @include vp-1023 {
     width: 332px;
     margin-bottom: 45px;
-    padding-bottom: 9px;
   }
 
   @include vp-767 {
     width: 100%;
     max-width: 290px;
     margin-bottom: 35px;
-    padding-bottom: 12px;
   }
 }
 
@@ -98,6 +95,7 @@
   max-width: 96px;
   border: none;
   padding: 0;
+  margin-bottom: 10px;
   background-color: transparent;
   cursor: pointer;
 
@@ -131,6 +129,14 @@
       @include vp-767 {
         bottom: -14px;
       }
+    }
+
+    @include vp-1023 {
+      margin-bottom: 9px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 12px;
     }
   }
 
@@ -248,7 +254,7 @@ a,
 .tabs__item-wrapper b {
   position: relative;
   z-index: 1;
-  width: 48%;
+  padding-right: 45px;
   margin: 0 auto 33px;
 
   @include font(60px, 150%, 700);
@@ -292,14 +298,13 @@ a,
   }
 
   @include vp-1023 {
-    width: 39%;
     margin-bottom: 35px;
   }
 
   @include vp-767 {
     @include font(48px, 150%, 700);
-    width: 128px;
     margin-bottom: 30px;
+    padding-right: 31px;
   }
 }
 

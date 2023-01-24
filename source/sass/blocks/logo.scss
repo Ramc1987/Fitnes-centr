@@ -2,7 +2,6 @@
   display: inline-block;
   vertical-align: baseline;
   cursor: default;
-  margin-right: auto;
 
   &:focus-within {
     outline: 1px solid $focus-color;

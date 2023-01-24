@@ -99,6 +99,9 @@
 }
 
 .contacts__item-link {
+  display: block;
+  width: fit-content;
+
   @include hover {
     color: $hover-color;
   }
